@@ -1871,7 +1871,7 @@ h3 em {
 }
 .admin-page {
   background: #f0eddf;
-  min-height: 100vh;
+  min-height: 100vh; min-height:100dvh;
 }
 .admin-header .brand {
   font: 22px Georgia;

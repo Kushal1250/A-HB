@@ -54,7 +54,7 @@
   justify-content: center;
 }
 .admin-page {
-  min-height: 100vh;
+  min-height: 100vh; min-height:100dvh;
   background: #f7f0f4;
 }
 .admin-header {

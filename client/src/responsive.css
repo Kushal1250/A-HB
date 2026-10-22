@@ -99,3 +99,40 @@ body { margin:0; }
  .j-root .j-lock-scene { max-width:1100px; }
  .modal.wide { width:min(1600px,calc(100% - 48px)); }
 }
+
+/* ---- Notched phones: keep content clear of the camera cut-out in landscape ---- */
+.j-root { padding-left:env(safe-area-inset-left,0px); padding-right:env(safe-area-inset-right,0px); }
+
+/* ---- Ultra-wide / 4K / 8K screens and TVs ----
+   The layout is built in CSS pixels, so on very large viewports it would sit as a small
+   column. These steps scale the whole experience proportionally so it fills the screen
+   and stays readable from across a room. */
+@media (min-width:3000px) { .j-root, .admin-main { zoom:1.4; } }
+@media (min-width:3600px) { .j-root, .admin-main { zoom:1.7; } }
+@media (min-width:5000px) { .j-root, .admin-main { zoom:2.4; } }
+@media (min-width:7000px) { .j-root, .admin-main { zoom:3.2; } }
+
+/* ---- TV browsers / remote-control navigation: obvious focus ring ---- */
+@media (min-width:1600px) {
+ .j-root :where(button,a,input,textarea,select,video):focus-visible,
+ .admin-main :where(button,a,input,textarea,select):focus-visible { outline-width:4px; outline-offset:6px; }
+}
+
+/* ---- Touch devices: comfortable tap targets and no sticky hover ---- */
+@media (pointer:coarse) {
+ .j-root :where(.text-button,.j-map button,.j-settings button),
+ .admin-main :where(button,.text-button) { min-height:44px; min-width:44px; }
+}
+
+/* ---- Tablets in portrait: use the extra width instead of the phone layout ---- */
+@media (min-width:651px) and (max-width:900px) {
+ .j-root .j-header, .j-root .j-intro, .j-root .j-chapter, .j-root .j-map { padding-inline:clamp(20px,4vw,36px); }
+ .j-root .j-keyring-tray { grid-template-columns:repeat(5,minmax(0,1fr)); }
+}
+
+/* ---- Foldables / very narrow (< 340px) ---- */
+@media (max-width:340px) {
+ .j-root .j-map, .j-root .j-keyring-tray { grid-template-columns:repeat(2,minmax(0,1fr)); }
+ .j-root .j-intro h1 { font-size:2.3rem; }
+ .j-root .j-settings button { font-size:.72rem; padding-inline:8px; }
+}
