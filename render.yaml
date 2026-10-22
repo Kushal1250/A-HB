@@ -1,7 +1,10 @@
+# Render Blueprint for the backend (Express API).
+# The app stores data in local files (no MongoDB / Cloudinary needed).
 services:
   - type: web
     name: anu-birthday-api
     runtime: node
+    plan: free
     buildCommand: npm ci --prefix server
     startCommand: npm start --prefix server
     healthCheckPath: /api/health
@@ -10,15 +13,27 @@ services:
         value: 24.19.0
       - key: NODE_ENV
         value: production
-      - key: TRUST_PROXY
-        value: "1"
-      - key: MONGODB_URI
-        sync: false
+      # Your exact Vercel address, e.g. https://anu-birthday.vercel.app
+      # (no trailing slash, no /admin). Separate several with commas.
       - key: FRONTEND_ORIGINS
         sync: false
-      - key: CLOUDINARY_CLOUD_NAME
+      # Creates / updates the /admin login on every start.
+      - key: ADMIN_EMAIL
         sync: false
-      - key: CLOUDINARY_API_KEY
+      - key: ADMIN_PASSWORD
         sync: false
-      - key: CLOUDINARY_API_SECRET
-        sync: false
+
+    # ------------------------------------------------------------------
+    # OPTIONAL UPGRADE: keep admin edits and uploads permanently.
+    # Free web services lose local files on every restart/redeploy.
+    # Persistent disks need a paid instance type. To enable:
+    #   1) change `plan: free` above to a paid plan (e.g. `plan: starter`)
+    #   2) uncomment the disk block below
+    #   3) add an env var   DATA_DIR = /var/data
+    # On first boot the committed seed-data/ is copied onto the disk;
+    # after that the disk is the source of truth.
+    # ------------------------------------------------------------------
+    # disk:
+    #   name: anu-data
+    #   mountPath: /var/data
+    #   sizeGB: 2

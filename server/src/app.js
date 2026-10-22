@@ -114,28 +114,32 @@ export function createApp({
       },
     }),
   );
-  app.use((req, res, next) => {
-    if (process.env.NODE_ENV !== "production" && !["localhost", "127.0.0.1", "[::1]", "::1"].includes(req.hostname)) {
-      return next(
-        fail("This app accepts localhost requests only.", 403),
-      );
+  // Host / Origin guard.
+  // - Local edition: only localhost, only same-origin browser requests.
+  // - Production (Render): browsers talk to the Vercel site, and Vercel proxies
+  //   /api/* to this server, so state-changing requests arrive with the Vercel
+  //   origin. That origin must be listed in FRONTEND_ORIGINS.
+  app.use((req, _res, next) => {
+    const production = process.env.NODE_ENV === "production";
+    if (
+      !production &&
+      !["localhost", "127.0.0.1", "[::1]", "::1"].includes(req.hostname)
+    ) {
+      return next(fail("This app accepts localhost requests only.", 403));
     }
     const origin = req.get("origin");
-
-const allowedOrigins = (process.env.FRONTEND_ORIGINS || "")
-  .split(",")
-  .map(value => value.trim().replace(/\/+$/, ""))
-  .filter(Boolean);
-
-const allowed = process.env.NODE_ENV === "production"
-  ? allowedOrigins.includes(origin)
-  : origin === `http://${req.get("host")}`;
-
-if (origin && !allowed) {
-  return next(
-    fail("Requests from this website are not allowed.", 403),
-  );
-}
+    if (origin) {
+      const allowedOrigins = (process.env.FRONTEND_ORIGINS || "")
+        .split(",")
+        .map((value) => value.trim().replace(/\/+$/, ""))
+        .filter(Boolean);
+      const allowed = production
+        ? allowedOrigins.includes(origin)
+        : origin === `http://${req.get("host")}`;
+      if (!allowed)
+        return next(fail("Requests from this website are not allowed.", 403));
+    }
+    next(); // <-- this call was missing, which made every request hang
   });
   app.use(express.json({ limit: "100kb" }));
   app.use(

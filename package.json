@@ -10,7 +10,8 @@
     "build": "npm run build --prefix client",
     "test": "npm test --prefix server && npm test --prefix client",
     "admin:create": "node server/scripts/create-admin.js",
-    "pretest": "npm run build"
+    "pretest": "npm run build",
+    "deploy:seed": "node scripts/prepare-seed.mjs"
   },
   "engines": {
     "node": "^22.22.2 || ^24.15.0 || >=26.0.0"

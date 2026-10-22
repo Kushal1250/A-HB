@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node src/index.js",
     "admin:create": "node scripts/create-admin.js",
-    "test": "node --test tests/errors.test.js tests/local.test.js tests/blessings.test.js tests/journey.test.js tests/creative.test.js tests/memory-videos.test.js"
+    "test": "node --test tests/errors.test.js tests/local.test.js tests/blessings.test.js tests/journey.test.js tests/creative.test.js tests/memory-videos.test.js tests/deploy.test.js"
   },
   "engines": {
     "node": "^22.22.2 || ^24.15.0 || >=26.0.0"
