@@ -1,25 +1,25 @@
 import express from "express";
-import { localErrorHandler } from "./middleware/errors.js";
-import helmet from "helmet";
 import { rateLimit } from "express-rate-limit";
-import multer from "multer";
-import sharp from "sharp";
 import { fileTypeFromBuffer } from "file-type";
-import { randomBytes, createHmac, timingSafeEqual } from "node:crypto";
-import { writeFile, unlink } from "node:fs/promises";
+import helmet from "helmet";
+import multer from "multer";
+import { createHmac, randomBytes, timingSafeEqual } from "node:crypto";
+import { unlink, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import sharp from "sharp";
 import { z } from "zod";
-import { createStore } from "./store.js";
-import { contentReferences, resolveBlessings } from "./blessings.js";
-import { normaliseJourney } from "../../shared/journey.js";
 import { emptyBlessings } from "../../shared/blessings.js";
+import { normaliseJourney } from "../../shared/journey.js";
+import { contentReferences, resolveBlessings } from "./blessings.js";
+import { localErrorHandler } from "./middleware/errors.js";
 import {
   hashPassword,
   hashToken,
   verifyPassword,
 } from "./services/passwords.js";
-import { parse, draftSchema, loginSchema } from "./validation.js";
+import { createStore } from "./store.js";
+import { draftSchema, loginSchema, parse } from "./validation.js";
 const fail = (message, status = 400) =>
   Object.assign(new Error(message), { status });
 const referenceIds = (state) => new Set([...contentReferences(state.draft), ...contentReferences(state.published)]);
@@ -95,6 +95,9 @@ export function createApp({
 } = {}) {
   const app = express();
   app.disable("x-powered-by");
+  if (process.env.NODE_ENV === "production") {
+    app.set("trust proxy", 1);
+  }
   app.use(
     helmet({
       contentSecurityPolicy: {
@@ -438,9 +441,16 @@ export function createApp({
   app.use("/api", api);
   app.use("/api", (_req, _res, next) => next(fail("Endpoint not found.", 404)));
   app.use(express.static(clientDirectory, { index: false }));
-  app.get(["/", "/admin"], (_req, res) =>
-    res.sendFile(path.join(clientDirectory, "index.html")),
-  );
+  app.get(["/", "/admin"], (_req, res) => {
+    if (process.env.NODE_ENV === "production") {
+      return res.json({
+        status: "ok",
+        message: "Backend is running. Open the frontend on Vercel.",
+      });
+    }
+
+    res.sendFile(path.join(clientDirectory, "index.html"));
+  });
   app.use((_req, _res, next) => next(fail("Page not found.", 404)));
   app.use(localErrorHandler);
   return app;
