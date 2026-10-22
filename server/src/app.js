@@ -121,9 +121,21 @@ export function createApp({
       );
     }
     const origin = req.get("origin");
-    if (origin && origin !== `http://${req.get("host")}`)
-      return next(fail("Requests from another website are not allowed.", 403));
-    next();
+
+const allowedOrigins = (process.env.FRONTEND_ORIGINS || "")
+  .split(",")
+  .map(value => value.trim().replace(/\/+$/, ""))
+  .filter(Boolean);
+
+const allowed = process.env.NODE_ENV === "production"
+  ? allowedOrigins.includes(origin)
+  : origin === `http://${req.get("host")}`;
+
+if (origin && !allowed) {
+  return next(
+    fail("Requests from this website are not allowed.", 403),
+  );
+}
   });
   app.use(express.json({ limit: "100kb" }));
   app.use(
