@@ -1,0 +1,101 @@
+[
+  {
+    "id": "241020260000000000000001",
+    "kind": "audio",
+    "filename": "241020260000000000000001.mp3",
+    "thumbnailName": null,
+    "mime": "audio/mpeg",
+    "originalName": "The Sealed Invitation \u2014 original chapter instrumental",
+    "title": "The Sealed Invitation",
+    "duration": 17.12,
+    "createdAt": "2026-10-18T11:00:00.000Z"
+  },
+  {
+    "id": "241020260000000000000002",
+    "kind": "audio",
+    "filename": "241020260000000000000002.mp3",
+    "thumbnailName": null,
+    "mime": "audio/mpeg",
+    "originalName": "Through the Garden Gate \u2014 original chapter instrumental",
+    "title": "Through the Garden Gate",
+    "duration": 15.63,
+    "createdAt": "2026-10-18T11:00:00.000Z"
+  },
+  {
+    "id": "241020260000000000000003",
+    "kind": "audio",
+    "filename": "241020260000000000000003.mp3",
+    "thumbnailName": null,
+    "mime": "audio/mpeg",
+    "originalName": "Stillness in the Courtyard \u2014 original chapter instrumental",
+    "title": "Stillness in the Courtyard",
+    "duration": 19.0,
+    "createdAt": "2026-10-18T11:00:00.000Z"
+  },
+  {
+    "id": "241020260000000000000004",
+    "kind": "audio",
+    "filename": "241020260000000000000004.mp3",
+    "thumbnailName": null,
+    "mime": "audio/mpeg",
+    "originalName": "Seeds of Courage \u2014 original chapter instrumental",
+    "title": "Seeds of Courage",
+    "duration": 15.0,
+    "createdAt": "2026-10-18T11:00:00.000Z"
+  },
+  {
+    "id": "241020260000000000000005",
+    "kind": "audio",
+    "filename": "241020260000000000000005.mp3",
+    "thumbnailName": null,
+    "mime": "audio/mpeg",
+    "originalName": "The Lantern Walk \u2014 original chapter instrumental",
+    "title": "The Lantern Walk",
+    "duration": 18.0,
+    "createdAt": "2026-10-18T11:00:00.000Z"
+  },
+  {
+    "id": "241020260000000000000006",
+    "kind": "audio",
+    "filename": "241020260000000000000006.mp3",
+    "thumbnailName": null,
+    "mime": "audio/mpeg",
+    "originalName": "Stories Yet to Happen \u2014 original chapter instrumental",
+    "title": "Stories Yet to Happen",
+    "duration": 16.33,
+    "createdAt": "2026-10-18T11:00:00.000Z"
+  },
+  {
+    "id": "241020260000000000000007",
+    "kind": "audio",
+    "filename": "241020260000000000000007.mp3",
+    "thumbnailName": null,
+    "mime": "audio/mpeg",
+    "originalName": "October Birthday Waltz \u2014 original chapter instrumental",
+    "title": "October Birthday Waltz",
+    "duration": 13.67,
+    "createdAt": "2026-10-18T11:00:00.000Z"
+  },
+  {
+    "id": "241020260000000000000008",
+    "kind": "audio",
+    "filename": "241020260000000000000008.mp3",
+    "thumbnailName": null,
+    "mime": "audio/mpeg",
+    "originalName": "Words Worth Keeping \u2014 original chapter instrumental",
+    "title": "Words Worth Keeping",
+    "duration": 17.55,
+    "createdAt": "2026-10-18T11:00:00.000Z"
+  },
+  {
+    "id": "241020260000000000000009",
+    "kind": "audio",
+    "filename": "241020260000000000000009.mp3",
+    "thumbnailName": null,
+    "mime": "audio/mpeg",
+    "originalName": "Something Still to Bloom \u2014 original chapter instrumental",
+    "title": "Something Still to Bloom",
+    "duration": 16.71,
+    "createdAt": "2026-10-18T11:00:00.000Z"
+  }
+]

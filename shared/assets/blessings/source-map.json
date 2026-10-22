@@ -1,0 +1,139 @@
+{
+  "images": [
+    {
+      "mediaId": "36a3f07c28881cfe17d5fc43",
+      "title": "The golden alcove",
+      "sourceNames": [
+        "WhatsApp Image 2026-10-18 at 11.47.18 AM.jpeg"
+      ],
+      "original": "originals/WhatsApp Image 2026-10-18 at 11.47.18 AM.jpeg",
+      "display": "36a3f07c28881cfe17d5fc43.webp"
+    },
+    {
+      "mediaId": "318906826063b0cc6011a4f1",
+      "title": "A courtyard of flowers",
+      "sourceNames": [
+        "image(20261018-090901).png",
+        "image(20261018-090427).png"
+      ],
+      "original": "originals/image(20261018-090901).png",
+      "display": "318906826063b0cc6011a4f1.webp"
+    },
+    {
+      "mediaId": "d934bdca0b4a107c40b80c84",
+      "title": "Details in blue and gold",
+      "sourceNames": [
+        "image(10).png",
+        "image(20261018-090914).png"
+      ],
+      "original": "originals/image(20261018-090914).png",
+      "display": "d934bdca0b4a107c40b80c84.webp"
+    },
+    {
+      "mediaId": "3f014ad09514d47b5aa805ab",
+      "title": "Together in the garden",
+      "sourceNames": [
+        "image(9).png",
+        "image(20261018-090925).png"
+      ],
+      "original": "originals/image(20261018-090925).png",
+      "display": "3f014ad09514d47b5aa805ab.webp"
+    },
+    {
+      "mediaId": "47a91e1e6616dbc250705143",
+      "title": "Beneath the hanging lamps",
+      "sourceNames": [
+        "image(8).png",
+        "image(20261018-090934).png"
+      ],
+      "original": "originals/image(20261018-090934).png",
+      "display": "47a91e1e6616dbc250705143.webp"
+    },
+    {
+      "mediaId": "55868981029023eab9dfdc11",
+      "title": "A gathering of blossoms",
+      "sourceNames": [
+        "image(20261018-090948).png"
+      ],
+      "original": "originals/image(20261018-090948).png",
+      "display": "55868981029023eab9dfdc11.webp"
+    },
+    {
+      "mediaId": "f085fbea83e5c8450b98454b",
+      "title": "A canopy of flowers",
+      "sourceNames": [
+        "image(7).png",
+        "image(20261018-090951).png"
+      ],
+      "original": "originals/image(20261018-090951).png",
+      "display": "f085fbea83e5c8450b98454b.webp"
+    },
+    {
+      "mediaId": "e387f88314d43af5420fe2db",
+      "title": "Quiet light in the shrine",
+      "sourceNames": [
+        "image(20261018-090957).png"
+      ],
+      "original": "originals/image(20261018-090957).png",
+      "display": "e387f88314d43af5420fe2db.webp"
+    },
+    {
+      "mediaId": "450d5e5e2ec3638ab140abcd",
+      "title": "A circle of colour",
+      "sourceNames": [
+        "image(20261018-091001).png",
+        "image(5).png"
+      ],
+      "original": "originals/image(20261018-091001).png",
+      "display": "450d5e5e2ec3638ab140abcd.webp"
+    },
+    {
+      "mediaId": "a93f9f85f9720d4ce165f76a",
+      "title": "A silver-framed moment",
+      "sourceNames": [
+        "image(20261018-091017).png",
+        "image(4).png"
+      ],
+      "original": "originals/image(20261018-091017).png",
+      "display": "a93f9f85f9720d4ce165f76a.webp"
+    },
+    {
+      "mediaId": "8f2ca3795e8e7f00cf573bf5",
+      "title": "Under the embroidered canopy",
+      "sourceNames": [
+        "image(6).png",
+        "image(20261018-091025).png"
+      ],
+      "original": "originals/image(20261018-091025).png",
+      "display": "8f2ca3795e8e7f00cf573bf5.webp"
+    },
+    {
+      "mediaId": "6a6d7fcf2a40b8afef85b5c3",
+      "title": "Pink blossoms, green leaves",
+      "sourceNames": [
+        "image(20261018-091033).png",
+        "image(3).png"
+      ],
+      "original": "originals/image(20261018-091033).png",
+      "display": "6a6d7fcf2a40b8afef85b5c3.webp"
+    },
+    {
+      "mediaId": "8da8dbe7e2397bd205e540e2",
+      "title": "A flower-filled keepsake",
+      "sourceNames": [
+        "image(20261018-091041).png",
+        "image(2).png"
+      ],
+      "original": "originals/image(20261018-091041).png",
+      "display": "8da8dbe7e2397bd205e540e2.webp"
+    }
+  ],
+  "video": {
+    "mediaId": "06eff680fc031ec6ee0a40d7",
+    "sourceNames": [
+      "WhatsApp Video 2026-10-18 at 12.02.11 PM(1).mp4",
+      "WhatsApp Video 2026-10-18 at 12.02.11 PM.mp4"
+    ],
+    "durationSeconds": 6.726
+  }
+}

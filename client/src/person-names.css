@@ -1,0 +1,3 @@
+/* Consistent fixed size for recipient and sender names throughout the interface. */
+:root .birthday-person-name,:root .birthday-person-input{font-family:"Palatino Linotype","Book Antiqua",Palatino,Georgia,serif!important;font-weight:800!important;font-size:22px!important;letter-spacing:.025em;line-height:inherit;color:inherit;overflow-wrap:anywhere}
+.birthday-person-name{font-style:normal}

@@ -1,0 +1,44 @@
+52 VIDEO MEMORIES — ANU'S BIRTHDAY
+
+Extract the whole ZIP into a NEW folder (do not merge over your running project).
+Open CMD in the extracted anu-birthday-mern folder.
+If Node still reports version 22, run:
+  set "PATH=C:\Program Files\nodejs;%PATH%"
+Then run:
+  npm run install:all
+  npm start
+Open http://localhost:3000
+
+Use the Memory Key in chapter 06 to reveal the photos and 52 videos.
+Tap a video's play control to watch it. Videos never autoplay; playing one
+pauses background music and other clips. Music can be resumed with its control.
+Every video has a short editable caption and a poster preview.
+
+Edit at http://localhost:3000/admin using your existing account, in Video
+memories. Edit captions/titles, reorder, hide, remove, or add clips; then save
+and publish. Future MP4 uploads have a 15 MB limit. The supplied larger clip
+has already been imported and works without reuploading.
+
+Your supplied project data, photos and chapter music are included. Keep this
+folder private: data contains personal media and local account records. Do not
+commit data to a public repository. The server listens only on this computer.
+
+Verification: production build; 28 backend tests; 77 frontend tests; HTTP
+range playback and WebP poster delivery checked for all 52 imported clips.
+Real-device playback has not been manually checked.
+
+SECOND VIDEO BATCH: 18 new videos appended after the original 17.
+The supplied data(2).zip could not be loaded. This package uses the last
+working project data; edits made only in that missing ZIP are not included.
+The shared(1).zip folder was checked and is identical to the existing one.
+
+THIRD VIDEO BATCH: 17 new clips appended, for 52 videos in total.
+The client(1).zip and APPLY-GROWING-KEY.zip contents match the working project
+when Windows line endings are normalized. No source changes were lost.
+The video collection now supports up to 100 clips in Admin and on the server.
+
+RESPONSIVE UPDATE: 3 additional clips, 55 total; fluid galleries and controls
+for phones, landscape screens, laptops, monitors, and wide TV browsers.
+All 105 tests pass and all 55 videos/posters respond correctly. Actual browser
+visual checks and TV/phone hardware playback remain to be done.
+data(3).zip was unavailable; its contents have not been merged.

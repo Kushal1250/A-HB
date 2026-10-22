@@ -1,0 +1,263 @@
+{
+  "media": [
+    {
+      "id": "36a3f07c28881cfe17d5fc43",
+      "kind": "image",
+      "filename": "36a3f07c28881cfe17d5fc43.webp",
+      "thumbnailName": "36a3f07c28881cfe17d5fc43-thumb.webp",
+      "mime": "image/webp",
+      "originalName": "WhatsApp Image 2026-10-18 at 11.47.18 AM.jpeg",
+      "width": 720,
+      "height": 1280,
+      "createdAt": "2026-10-18T09:00:00.000Z"
+    },
+    {
+      "id": "318906826063b0cc6011a4f1",
+      "kind": "image",
+      "filename": "318906826063b0cc6011a4f1.webp",
+      "thumbnailName": "318906826063b0cc6011a4f1-thumb.webp",
+      "mime": "image/webp",
+      "originalName": "image(20261018-090901).png",
+      "width": 960,
+      "height": 1280,
+      "createdAt": "2026-10-18T09:00:00.000Z"
+    },
+    {
+      "id": "d934bdca0b4a107c40b80c84",
+      "kind": "image",
+      "filename": "d934bdca0b4a107c40b80c84.webp",
+      "thumbnailName": "d934bdca0b4a107c40b80c84-thumb.webp",
+      "mime": "image/webp",
+      "originalName": "image(20261018-090914).png",
+      "width": 960,
+      "height": 1280,
+      "createdAt": "2026-10-18T09:00:00.000Z"
+    },
+    {
+      "id": "3f014ad09514d47b5aa805ab",
+      "kind": "image",
+      "filename": "3f014ad09514d47b5aa805ab.webp",
+      "thumbnailName": "3f014ad09514d47b5aa805ab-thumb.webp",
+      "mime": "image/webp",
+      "originalName": "image(20261018-090925).png",
+      "width": 960,
+      "height": 1280,
+      "createdAt": "2026-10-18T09:00:00.000Z"
+    },
+    {
+      "id": "47a91e1e6616dbc250705143",
+      "kind": "image",
+      "filename": "47a91e1e6616dbc250705143.webp",
+      "thumbnailName": "47a91e1e6616dbc250705143-thumb.webp",
+      "mime": "image/webp",
+      "originalName": "image(20261018-090934).png",
+      "width": 960,
+      "height": 1280,
+      "createdAt": "2026-10-18T09:00:00.000Z"
+    },
+    {
+      "id": "55868981029023eab9dfdc11",
+      "kind": "image",
+      "filename": "55868981029023eab9dfdc11.webp",
+      "thumbnailName": "55868981029023eab9dfdc11-thumb.webp",
+      "mime": "image/webp",
+      "originalName": "image(20261018-090948).png",
+      "width": 1280,
+      "height": 960,
+      "createdAt": "2026-10-18T09:00:00.000Z"
+    },
+    {
+      "id": "f085fbea83e5c8450b98454b",
+      "kind": "image",
+      "filename": "f085fbea83e5c8450b98454b.webp",
+      "thumbnailName": "f085fbea83e5c8450b98454b-thumb.webp",
+      "mime": "image/webp",
+      "originalName": "image(20261018-090951).png",
+      "width": 1200,
+      "height": 1600,
+      "createdAt": "2026-10-18T09:00:00.000Z"
+    },
+    {
+      "id": "e387f88314d43af5420fe2db",
+      "kind": "image",
+      "filename": "e387f88314d43af5420fe2db.webp",
+      "thumbnailName": "e387f88314d43af5420fe2db-thumb.webp",
+      "mime": "image/webp",
+      "originalName": "image(20261018-090957).png",
+      "width": 1200,
+      "height": 1600,
+      "createdAt": "2026-10-18T09:00:00.000Z"
+    },
+    {
+      "id": "450d5e5e2ec3638ab140abcd",
+      "kind": "image",
+      "filename": "450d5e5e2ec3638ab140abcd.webp",
+      "thumbnailName": "450d5e5e2ec3638ab140abcd-thumb.webp",
+      "mime": "image/webp",
+      "originalName": "image(20261018-091001).png",
+      "width": 721,
+      "height": 1280,
+      "createdAt": "2026-10-18T09:00:00.000Z"
+    },
+    {
+      "id": "a93f9f85f9720d4ce165f76a",
+      "kind": "image",
+      "filename": "a93f9f85f9720d4ce165f76a.webp",
+      "thumbnailName": "a93f9f85f9720d4ce165f76a-thumb.webp",
+      "mime": "image/webp",
+      "originalName": "image(20261018-091017).png",
+      "width": 721,
+      "height": 1280,
+      "createdAt": "2026-10-18T09:00:00.000Z"
+    },
+    {
+      "id": "8f2ca3795e8e7f00cf573bf5",
+      "kind": "image",
+      "filename": "8f2ca3795e8e7f00cf573bf5.webp",
+      "thumbnailName": "8f2ca3795e8e7f00cf573bf5-thumb.webp",
+      "mime": "image/webp",
+      "originalName": "image(20261018-091025).png",
+      "width": 721,
+      "height": 1280,
+      "createdAt": "2026-10-18T09:00:00.000Z"
+    },
+    {
+      "id": "6a6d7fcf2a40b8afef85b5c3",
+      "kind": "image",
+      "filename": "6a6d7fcf2a40b8afef85b5c3.webp",
+      "thumbnailName": "6a6d7fcf2a40b8afef85b5c3-thumb.webp",
+      "mime": "image/webp",
+      "originalName": "image(20261018-091033).png",
+      "width": 1080,
+      "height": 1350,
+      "createdAt": "2026-10-18T09:00:00.000Z"
+    },
+    {
+      "id": "8da8dbe7e2397bd205e540e2",
+      "kind": "image",
+      "filename": "8da8dbe7e2397bd205e540e2.webp",
+      "thumbnailName": "8da8dbe7e2397bd205e540e2-thumb.webp",
+      "mime": "image/webp",
+      "originalName": "image(20261018-091041).png",
+      "width": 1080,
+      "height": 1350,
+      "createdAt": "2026-10-18T09:00:00.000Z"
+    },
+    {
+      "id": "06eff680fc031ec6ee0a40d7",
+      "kind": "video",
+      "filename": "06eff680fc031ec6ee0a40d7.mp4",
+      "thumbnailName": "06eff680fc031ec6ee0a40d7-thumb.webp",
+      "mime": "video/mp4",
+      "originalName": "WhatsApp Video 2026-10-18 at 12.02.11 PM(1).mp4",
+      "createdAt": "2026-10-18T09:00:00.000Z"
+    }
+  ],
+  "photos": [
+    {
+      "id": "4018b0b7-6877-5172-bf7a-72ee233705d3",
+      "mediaId": "36a3f07c28881cfe17d5fc43",
+      "title": "The golden alcove",
+      "caption": "A decorated deity within an ornate golden shrine.",
+      "alt": "A decorated deity within an ornate golden shrine.",
+      "visible": true
+    },
+    {
+      "id": "28304445-57b4-5cee-b7b1-a61803b8194d",
+      "mediaId": "318906826063b0cc6011a4f1",
+      "title": "A courtyard of flowers",
+      "caption": "A small devotional figure surrounded by yellow garlands and soft pink curtains.",
+      "alt": "A small devotional figure surrounded by yellow garlands and soft pink curtains.",
+      "visible": true
+    },
+    {
+      "id": "66f757a0-55f7-502b-bd9e-db972913ab80",
+      "mediaId": "d934bdca0b4a107c40b80c84",
+      "title": "Details in blue and gold",
+      "caption": "A closer view of a devotional figure wearing blue and silver ornamentation.",
+      "alt": "A closer view of a devotional figure wearing blue and silver ornamentation.",
+      "visible": true
+    },
+    {
+      "id": "ecf9df3b-baf8-5465-9297-ffec85d88dd2",
+      "mediaId": "3f014ad09514d47b5aa805ab",
+      "title": "Together in the garden",
+      "caption": "Two richly adorned devotional figures framed by flowers.",
+      "alt": "Two richly adorned devotional figures framed by flowers.",
+      "visible": true
+    },
+    {
+      "id": "2363badd-a357-5e18-bfda-4b1923cd2af2",
+      "mediaId": "47a91e1e6616dbc250705143",
+      "title": "Beneath the hanging lamps",
+      "caption": "A wider view of two devotional figures beneath hanging ornaments.",
+      "alt": "A wider view of two devotional figures beneath hanging ornaments.",
+      "visible": true
+    },
+    {
+      "id": "bd1e87d4-1dab-54de-b189-ce34ab71bd12",
+      "mediaId": "55868981029023eab9dfdc11",
+      "title": "A gathering of blossoms",
+      "caption": "A wide shrine filled with devotional figures and layered floral decorations.",
+      "alt": "A wide shrine filled with devotional figures and layered floral decorations.",
+      "visible": true
+    },
+    {
+      "id": "622f0e97-ff3b-5922-9087-89bd7b8693e7",
+      "mediaId": "f085fbea83e5c8450b98454b",
+      "title": "A canopy of flowers",
+      "caption": "Devotional figures beneath a dense canopy of colourful flowers.",
+      "alt": "Devotional figures beneath a dense canopy of colourful flowers.",
+      "visible": true
+    },
+    {
+      "id": "e5e1e11a-e053-5566-b748-7019f74fcf5e",
+      "mediaId": "e387f88314d43af5420fe2db",
+      "title": "Quiet light in the shrine",
+      "caption": "A vertical view of a flower-filled shrine and devotional figures.",
+      "alt": "A vertical view of a flower-filled shrine and devotional figures.",
+      "visible": true
+    },
+    {
+      "id": "fbd4b3b3-40d9-5a59-9cbe-90c37e0b15c7",
+      "mediaId": "450d5e5e2ec3638ab140abcd",
+      "title": "A circle of colour",
+      "caption": "A small devotional figure against a bright circular ornamental backdrop.",
+      "alt": "A small devotional figure against a bright circular ornamental backdrop.",
+      "visible": true
+    },
+    {
+      "id": "ebe41ea2-dcad-58a5-895d-b3161595c984",
+      "mediaId": "a93f9f85f9720d4ce165f76a",
+      "title": "A silver-framed moment",
+      "caption": "A small devotional figure seated within a silver-coloured frame.",
+      "alt": "A small devotional figure seated within a silver-coloured frame.",
+      "visible": true
+    },
+    {
+      "id": "f7f7fcce-9833-5fc7-8fb0-2d1155fb98e0",
+      "mediaId": "8f2ca3795e8e7f00cf573bf5",
+      "title": "Under the embroidered canopy",
+      "caption": "Two devotional figures beneath a green and purple embroidered backdrop.",
+      "alt": "Two devotional figures beneath a green and purple embroidered backdrop.",
+      "visible": true
+    },
+    {
+      "id": "68ebf209-38ff-5fb9-88ed-fb343e1b089c",
+      "mediaId": "6a6d7fcf2a40b8afef85b5c3",
+      "title": "Pink blossoms, green leaves",
+      "caption": "A small devotional figure dressed in pink and green beneath fresh flowers.",
+      "alt": "A small devotional figure dressed in pink and green beneath fresh flowers.",
+      "visible": true
+    },
+    {
+      "id": "9f827d2e-b586-5aa2-877c-a275e03d63a4",
+      "mediaId": "8da8dbe7e2397bd205e540e2",
+      "title": "A flower-filled keepsake",
+      "caption": "A framed collage of the pink-and-green devotional figure and flowers.",
+      "alt": "A framed collage of the pink-and-green devotional figure and flowers.",
+      "visible": true
+    }
+  ],
+  "videoId": "06eff680fc031ec6ee0a40d7"
+}

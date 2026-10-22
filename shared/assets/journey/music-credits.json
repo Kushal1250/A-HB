@@ -1,0 +1,101 @@
+[
+  {
+    "chapter": "invitation",
+    "title": "The Sealed Invitation",
+    "composer": "Original synthesised composition",
+    "filename": "241020260000000000000001.mp3",
+    "duration": 17.12,
+    "defaultVolume": 0.28,
+    "provenance": "original",
+    "source": "scripts/compose-journey.py",
+    "license": "Original project recording supplied for use with this birthday website. No commercial song recording is included."
+  },
+  {
+    "chapter": "gate",
+    "title": "Through the Garden Gate",
+    "composer": "Original synthesised composition",
+    "filename": "241020260000000000000002.mp3",
+    "duration": 15.63,
+    "defaultVolume": 0.28,
+    "provenance": "original",
+    "source": "scripts/compose-journey.py",
+    "license": "Original project recording supplied for use with this birthday website. No commercial song recording is included."
+  },
+  {
+    "chapter": "blessings",
+    "title": "Stillness in the Courtyard",
+    "composer": "Original synthesised composition",
+    "filename": "241020260000000000000003.mp3",
+    "duration": 19.0,
+    "defaultVolume": 0.28,
+    "provenance": "original",
+    "source": "scripts/compose-journey.py",
+    "license": "Original project recording supplied for use with this birthday website. No commercial song recording is included."
+  },
+  {
+    "chapter": "wishes",
+    "title": "Seeds of Courage",
+    "composer": "Original synthesised composition",
+    "filename": "241020260000000000000004.mp3",
+    "duration": 15.0,
+    "defaultVolume": 0.28,
+    "provenance": "original",
+    "source": "scripts/compose-journey.py",
+    "license": "Original project recording supplied for use with this birthday website. No commercial song recording is included."
+  },
+  {
+    "chapter": "lantern",
+    "title": "The Lantern Walk",
+    "composer": "Original synthesised composition",
+    "filename": "241020260000000000000005.mp3",
+    "duration": 18.0,
+    "defaultVolume": 0.28,
+    "provenance": "original",
+    "source": "scripts/compose-journey.py",
+    "license": "Original project recording supplied for use with this birthday website. No commercial song recording is included."
+  },
+  {
+    "chapter": "memories",
+    "title": "Stories Yet to Happen",
+    "composer": "Original synthesised composition",
+    "filename": "241020260000000000000006.mp3",
+    "duration": 16.33,
+    "defaultVolume": 0.28,
+    "provenance": "original",
+    "source": "scripts/compose-journey.py",
+    "license": "Original project recording supplied for use with this birthday website. No commercial song recording is included."
+  },
+  {
+    "chapter": "celebration",
+    "title": "October Birthday Waltz",
+    "composer": "Original synthesised composition",
+    "filename": "241020260000000000000007.mp3",
+    "duration": 13.67,
+    "defaultVolume": 0.28,
+    "provenance": "original",
+    "source": "scripts/compose-journey.py",
+    "license": "Original project recording supplied for use with this birthday website. No commercial song recording is included."
+  },
+  {
+    "chapter": "letter",
+    "title": "Words Worth Keeping",
+    "composer": "Original synthesised composition",
+    "filename": "241020260000000000000008.mp3",
+    "duration": 17.55,
+    "defaultVolume": 0.28,
+    "provenance": "original",
+    "source": "scripts/compose-journey.py",
+    "license": "Original project recording supplied for use with this birthday website. No commercial song recording is included."
+  },
+  {
+    "chapter": "keepsake",
+    "title": "Something Still to Bloom",
+    "composer": "Original synthesised composition",
+    "filename": "241020260000000000000009.mp3",
+    "duration": 16.71,
+    "defaultVolume": 0.28,
+    "provenance": "original",
+    "source": "scripts/compose-journey.py",
+    "license": "Original project recording supplied for use with this birthday website. No commercial song recording is included."
+  }
+]

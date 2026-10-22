@@ -1,0 +1,24 @@
+{
+  "name": "ANU PATEL",
+  "shortName": "Anu",
+  "sender": "KUSHAL PATEL",
+  "birthday": "2026-10-24",
+  "timezone": "Asia/Kolkata",
+  "headline": "Happy Birthday, {name}!",
+  "intro": "A small garden of good wishes, planted just for you. Every little corner holds something to discover.",
+  "letter": "Dear Anu,\n\nOn 24 October, I wanted to give you more than a message that disappears between notifications. So here is a little garden: a place where the wishes are yours, the light is gentle, and nothing asks you to be anyone except yourself.\n\nFor your birthday, I wish you a life that feels good from the inside. Not only the milestones that look wonderful in photographs, but the ordinary Tuesdays when you feel peaceful, the small decisions you are proud of, and the laughter that arrives before you even notice you needed it.\n\nMay you have the courage to begin before everything feels certain. May you find people who listen with care, work that leaves room for living, and dreams that grow at a pace you can enjoy. When a day feels heavy, I hope something simple\u2014a kind word, a familiar song, a quiet moment\u2014helps it feel lighter.\n\nFriendship does not always need a grand speech. Sometimes it is simply wanting life to be gentle with someone, cheering for what matters to them, and wishing them happiness even in the moments we do not get to see. That is the feeling behind this little gift.\n\nI hope the coming year gives you memories you will want to keep: an unexpected adventure, a conversation that lasts longer than planned, a place that becomes a favourite, and plenty of reasons to say, \u201cI am glad this happened.\u201d There are still so many good moments waiting to become your stories.\n\nYou do not have to make this year extraordinary every day. I only hope you get to live it fully, kindly, and in a way that feels honestly yours.\n\nHappy Birthday, Anu. May there always be something beautiful still to bloom.\n\nWith warm wishes,\nKUSHAL PATEL",
+  "finalMessage": "May your life grow in directions that feel like you.\nMay your happiest days become memories you can return to.\nAnd may you always have something beautiful still to look forward to.\n\nHappy Birthday, Anu.",
+  "colors": {
+    "pink": "#72513c",
+    "lavender": "#526546"
+  },
+  "sections": {
+    "constellation": true,
+    "memories": true,
+    "letter": true
+  },
+  "noIndex": true,
+  "photos": [],
+  "musicId": "f09c6a181c3fd44b7763f3a4",
+  "memoryVideos": []
+}

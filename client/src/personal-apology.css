@@ -1,0 +1,5 @@
+.birthday .personal-apology{box-sizing:border-box;display:flex;align-items:center;justify-content:center;gap:14px;margin:0 auto;padding:20px clamp(18px,5vw,60px);background:var(--paper,#f3e8d5);color:var(--text,#153d2c);border-block:1px solid var(--line,#153d2c38);text-align:center}
+.birthday .personal-apology p{max-width:65ch;margin:0;font:italic clamp(16px,1.7vw,21px)/1.8 Georgia,serif;overflow-wrap:anywhere}
+.birthday .personal-apology>span{font-size:26px;flex:none;opacity:.7}
+.birthday .personal-apology-bottom{margin-top:24px;padding-block:30px}
+@media(max-width:600px){.birthday .personal-apology{gap:9px;padding-inline:18px}.birthday .personal-apology>span{font-size:21px}}

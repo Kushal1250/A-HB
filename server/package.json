@@ -1,0 +1,26 @@
+{
+  "name": "anu-birthday-server",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "admin:create": "node scripts/create-admin.js",
+    "test": "node --test tests/errors.test.js tests/local.test.js tests/blessings.test.js tests/journey.test.js tests/creative.test.js tests/memory-videos.test.js"
+  },
+  "engines": {
+    "node": "^22.22.2 || ^24.15.0 || >=26.0.0"
+  },
+  "dependencies": {
+    "express": "5.3.0",
+    "zod": "4.6.7",
+    "helmet": "8.3.0",
+    "express-rate-limit": "8.7.1",
+    "multer": "2.4.0",
+    "sharp": "0.35.5",
+    "file-type": "22.2.0"
+  },
+  "devDependencies": {
+    "supertest": "7.3.1"
+  }
+}

@@ -1,0 +1,101 @@
+/* Shared sizing for phones, tablets, desktop browsers and TV browsers. */
+html { -webkit-text-size-adjust:100%; }
+body { margin:0; }
+#root { min-width:0; }
+.j-root { min-width:0; min-height:100svh; }
+.j-root :where(h1,h2,h3,h4,p,figcaption,button,a,label),
+.admin-main :where(h1,h2,h3,p,label,button) { overflow-wrap:anywhere; }
+.j-root :where(img,video,canvas), .admin-main :where(img,video) { max-width:100%; }
+.j-root :where(button,a,input,textarea,select),
+.admin-main :where(button,a,input,textarea,select) { touch-action:manipulation; }
+.j-root button, .admin-main button { min-height:44px; }
+.j-root :where(button,a,input,textarea,select,video):focus-visible,
+.admin-main :where(button,a,input,textarea,select):focus-visible {
+ outline:3px solid #e5bd69; outline-offset:4px;
+}
+.j-root :where(.j-gate-layout,.j-blessing-step,.j-blessing-extras,.j-memory-photos,.memory-video-grid)>* { min-width:0; }
+.j-root .j-intro h1 { font-size:clamp(2.55rem,7vw,6rem); letter-spacing:-.035em; }
+.j-root .j-settings { gap:8px; }
+.j-root .j-settings button { font-size:clamp(.75rem,.85vw,1rem); }
+.j-root .memory-video-grid { grid-template-columns:repeat(3,minmax(0,1fr)); }
+.j-root .memory-video-grid video { height:auto; max-height:min(70svh,600px); }
+.j-root .j-sacred-photo { height:clamp(280px,45vw,560px); }
+.j-root .j-memory-photos img { height:auto; aspect-ratio:4/5; max-height:480px; object-fit:contain; }
+.j-root .j-video-alcove video { height:auto; max-height:70svh; }
+.j-root .j-next { white-space:normal; text-align:start; }
+.j-root .j-sound { padding-inline:max(16px,3%); }
+.modal { width:min(720px,calc(100% - 24px)); max-width:calc(100% - 24px); max-height:90svh; overflow:auto; overscroll-behavior:contain; }
+.modal.wide { width:min(1100px,calc(100% - 24px)); }
+.modal-top { gap:12px; }
+.modal-top h2 { min-width:0; overflow-wrap:anywhere; }
+.modal-top button { flex-shrink:0; min-width:44px; min-height:44px; }
+.admin-main { min-width:0; }
+.admin-main :where(input,textarea,select) { max-width:100%; min-width:0; }
+.memory-video-edit .button-row { display:flex; flex-wrap:wrap; gap:8px; }
+@media (max-width:1000px) {
+ .j-root .memory-video-grid, .j-root .j-memory-photos { grid-template-columns:repeat(2,minmax(0,1fr)); }
+ .j-root .j-map button, .j-root .j-keyring-tray>div { font-size:.75rem; }
+}
+@media (max-width:650px) {
+ .j-root .memory-video-grid, .j-root .j-memory-photos { grid-template-columns:minmax(0,1fr); }
+ .j-root .j-header, .j-root .j-intro, .j-root .j-chapter { padding-inline:clamp(16px,5vw,30px); }
+ .j-root .j-header { padding-top:max(20px,env(safe-area-inset-top)); }
+ .j-root .j-chapter { padding-bottom:max(40px,env(safe-area-inset-bottom)); }
+ .j-root .j-map { grid-template-columns:repeat(3,minmax(0,1fr)); }
+ .j-root .j-map button { padding:8px 6px; font-size:.7rem; }
+ .j-root .j-map button small { font-size:.65rem; }
+ .j-root .j-keyring-tray { grid-template-columns:repeat(3,minmax(0,1fr)); }
+ .j-root .j-settings { width:100%; }
+ .j-root .j-settings button { flex:1 1 auto; }
+ .j-root .j-toolbar { align-items:stretch; }
+ .j-root .j-toolbar button { flex:1 1 150px; }
+ .j-root .j-lock-scene { padding-inline:12px; }
+ .j-root .j-lock-art { gap:10px; }
+ .j-root .j-lock-scene .primary { white-space:normal; }
+ .j-root .j-sacred-photo { height:clamp(280px,110vw,460px); }
+ .j-root .j-letter-text { font-size:1rem; line-height:1.8; }
+ .j-root .j-invitation-paper { padding-inline:8%; }
+ .j-root .memory-video-grid video { max-height:65svh; }
+ .modal { padding:16px; }
+ .admin-main { padding-inline:16px; }
+ .admin-main input, .admin-main textarea, .admin-main select { font-size:16px; }
+}
+/* Short landscape viewports keep media inside the visible browser height. */
+@media (max-height:550px) and (orientation:landscape) {
+ .j-root .memory-video-grid video, .j-root .j-video-alcove video { max-height:75svh; }
+ .j-root .j-sacred-photo { height:72svh; }
+ .j-root .j-intro { margin-top:30px; }
+ .modal { max-height:92svh; }
+}
+/* Wider layouts also enlarge reading text and controls for distant viewing. */
+@media (min-width:1600px) {
+ .j-root .j-header { max-width:1600px; }
+ .j-root :is(.j-chapter,.j-map,.j-sound,.j-keyring) { max-width:1500px; }
+ .j-root .j-intro { max-width:1400px; }
+ .j-root { font-size:18px; }
+ .j-root .j-map button { font-size:14px; }
+ .j-root .j-map button small { font-size:12px; }
+ .j-root .j-keyring-tray>div { font-size:14px; }
+ .j-root :is(.j-lock-scene p,.j-blessing-copy>p,.j-local-note,.j-video-alcove>p) { font-size:17px; }
+ .j-root :is(.j-settings button,.j-toolbar button,.j-step-navigation button,.j-next,.j-sound button) { font-size:16px; }
+ .j-root .j-lock-scene { max-width:850px; }
+}
+@media (min-width:2400px) {
+ .j-root { font-size:24px; }
+ .j-root :is(.j-header,.j-chapter,.j-map,.j-sound,.j-keyring) { max-width:2200px; }
+ .j-root .j-intro { max-width:2000px; }
+ .j-root .j-intro h1 { font-size:128px; max-width:1400px; }
+ .j-root .j-chapter-heading>h2 { font-size:44px; }
+ .j-root .j-brand { font-size:36px; }
+ .j-root .j-brand small, .j-root .eyebrow { font-size:16px; }
+ .j-root :is(.j-map button,.j-map button small,.j-keyring-tray>div,.j-sound,.j-track-title) { font-size:20px; }
+ .j-root :is(.j-settings button,.j-toolbar button,.j-step-navigation button,.j-next,.j-sound button,.j-lock-scene button) { font-size:22px; min-height:60px; }
+ .j-root :is(.j-lock-scene p,.j-blessing-copy>p,.j-local-note,.j-video-alcove>p) { font-size:22px; }
+ .j-root .j-letter-text { font-size:26px; }
+ .j-root .memory-video-grid { grid-template-columns:repeat(4,minmax(0,1fr)); }
+ .j-root .memory-video-grid h4, .j-root .memory-video-grid figcaption, .j-root .j-memory-photos figcaption { font-size:24px; }
+ .j-root .memory-video-grid video { max-height:800px; }
+ .j-root .memory-video-number { font-size:16px; }
+ .j-root .j-lock-scene { max-width:1100px; }
+ .modal.wide { width:min(1600px,calc(100% - 48px)); }
+}

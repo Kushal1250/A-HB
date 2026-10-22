@@ -1,0 +1,476 @@
+[
+  {
+    "id": "seal-break",
+    "name": "Wax seal breaks",
+    "trigger": "Open invitation",
+    "reducedMotion": "Immediate static final state; all controls and text remain available"
+  },
+  {
+    "id": "invite-fold",
+    "name": "Invitation paper unfolds",
+    "trigger": "Invitation unlocked",
+    "reducedMotion": "Immediate static final state; all controls and text remain available"
+  },
+  {
+    "id": "name-wipe",
+    "name": "Recipient name is written into view",
+    "trigger": "Invitation unlocked",
+    "reducedMotion": "Immediate static final state; all controls and text remain available"
+  },
+  {
+    "id": "gate-key",
+    "name": "Gate key slides into position",
+    "trigger": "Gate unlocked",
+    "reducedMotion": "Immediate static final state; all controls and text remain available"
+  },
+  {
+    "id": "gate-panels",
+    "name": "Gate canopy opens upward",
+    "trigger": "Gate unlocked",
+    "reducedMotion": "Immediate static final state; all controls and text remain available"
+  },
+  {
+    "id": "path-glow",
+    "name": "Garden path lights from near to far",
+    "trigger": "Gate unlocked",
+    "reducedMotion": "Immediate static final state; all controls and text remain available"
+  },
+  {
+    "id": "border-draw",
+    "name": "Invitation border traces its perimeter",
+    "trigger": "Invitation unlocked",
+    "reducedMotion": "Immediate static final state; all controls and text remain available"
+  },
+  {
+    "id": "key-arrive",
+    "name": "First key rises into its resting place",
+    "trigger": "First key collected",
+    "reducedMotion": "Immediate static final state; all controls and text remain available"
+  },
+  {
+    "id": "key-select",
+    "name": "Selected chapter key tilts into focus",
+    "trigger": "Choose unlock key",
+    "reducedMotion": "Immediate static final state; all controls and text remain available"
+  },
+  {
+    "id": "key-travel",
+    "name": "Selected key moves to the lock",
+    "trigger": "Unlock action",
+    "reducedMotion": "Immediate static final state; all controls and text remain available"
+  },
+  {
+    "id": "key-turn",
+    "name": "Key rotates through the keyhole",
+    "trigger": "Unlock action",
+    "reducedMotion": "Immediate static final state; all controls and text remain available"
+  },
+  {
+    "id": "lock-release",
+    "name": "Lock shackle lifts",
+    "trigger": "Unlock completed",
+    "reducedMotion": "Immediate static final state; all controls and text remain available"
+  },
+  {
+    "id": "map-progress",
+    "name": "Map route extends",
+    "trigger": "Unlock a chapter",
+    "reducedMotion": "Immediate static final state; all controls and text remain available"
+  },
+  {
+    "id": "key-settle",
+    "name": "Collected key settles on the ring",
+    "trigger": "Later key collected",
+    "reducedMotion": "Immediate static final state; all controls and text remain available"
+  },
+  {
+    "id": "ring-open",
+    "name": "Keyring tray unfolds",
+    "trigger": "Open keyring",
+    "reducedMotion": "Immediate static final state; all controls and text remain available"
+  },
+  {
+    "id": "chapter-path",
+    "name": "Chapter content follows the path",
+    "trigger": "Chapter unlock or replay",
+    "reducedMotion": "Immediate static final state; all controls and text remain available"
+  },
+  {
+    "id": "arch-draw",
+    "name": "Courtyard arch is drawn",
+    "trigger": "Open blessings chapter",
+    "reducedMotion": "Immediate static final state; all controls and text remain available"
+  },
+  {
+    "id": "curtain-part",
+    "name": "Two curtains part horizontally",
+    "trigger": "Curtain reveal",
+    "reducedMotion": "Immediate static final state; all controls and text remain available"
+  },
+  {
+    "id": "frame-trace",
+    "name": "Frame light traces the edge",
+    "trigger": "Trace reveal",
+    "reducedMotion": "Immediate static final state; all controls and text remain available"
+  },
+  {
+    "id": "door-swing",
+    "name": "Two doors swing away from image",
+    "trigger": "Door reveal",
+    "reducedMotion": "Immediate static final state; all controls and text remain available"
+  },
+  {
+    "id": "lamp-ignite",
+    "name": "A lamp flame grows from the wick",
+    "trigger": "Light symbolic lamp",
+    "reducedMotion": "Immediate static final state; all controls and text remain available"
+  },
+  {
+    "id": "lamp-flicker",
+    "name": "Lamp flame gently changes shape",
+    "trigger": "Light symbolic lamp",
+    "reducedMotion": "Immediate static final state; all controls and text remain available"
+  },
+  {
+    "id": "lamp-halo",
+    "name": "Warm lamp halo expands",
+    "trigger": "Light symbolic lamp",
+    "reducedMotion": "Immediate static final state; all controls and text remain available"
+  },
+  {
+    "id": "flower-place",
+    "name": "Flower rotates onto offering ledge",
+    "trigger": "Place flower",
+    "reducedMotion": "Immediate static final state; all controls and text remain available"
+  },
+  {
+    "id": "petals-settle",
+    "name": "Petals fan out beneath frame",
+    "trigger": "Place flower",
+    "reducedMotion": "Immediate static final state; all controls and text remain available"
+  },
+  {
+    "id": "prayer-flap",
+    "name": "Prayer envelope flap folds back",
+    "trigger": "Open prayer envelope",
+    "reducedMotion": "Immediate static final state; all controls and text remain available"
+  },
+  {
+    "id": "blessing-unfold",
+    "name": "Per-image blessing opens across page",
+    "trigger": "Reveal photograph",
+    "reducedMotion": "Immediate static final state; all controls and text remain available"
+  },
+  {
+    "id": "next-door",
+    "name": "Next blessing door slides into readiness",
+    "trigger": "Reveal current photograph",
+    "reducedMotion": "Immediate static final state; all controls and text remain available"
+  },
+  {
+    "id": "page-turn",
+    "name": "Decorative page turns away from image",
+    "trigger": "Page reveal",
+    "reducedMotion": "Immediate static final state; all controls and text remain available"
+  },
+  {
+    "id": "video-open",
+    "name": "Video alcove opens vertically",
+    "trigger": "Open quiet video moment",
+    "reducedMotion": "Immediate static final state; all controls and text remain available"
+  },
+  {
+    "id": "prayer-card",
+    "name": "Closing prayer card rises into view",
+    "trigger": "Reach last blessing",
+    "reducedMotion": "Immediate static final state; all controls and text remain available"
+  },
+  {
+    "id": "blessing-key",
+    "name": "Ornamental blessing key draws its outline",
+    "trigger": "Reveal a devotional view",
+    "reducedMotion": "Immediate static final state; all controls and text remain available"
+  },
+  {
+    "id": "seed-drop",
+    "name": "Seed falls into soil",
+    "trigger": "Open wish garden",
+    "reducedMotion": "Immediate static final state; all controls and text remain available"
+  },
+  {
+    "id": "rain-fall",
+    "name": "Water drops fall into soil",
+    "trigger": "Water selected seed",
+    "reducedMotion": "Immediate static final state; all controls and text remain available"
+  },
+  {
+    "id": "stem-grow",
+    "name": "Stem grows from soil",
+    "trigger": "First watering",
+    "reducedMotion": "Immediate static final state; all controls and text remain available"
+  },
+  {
+    "id": "leaf-unfurl",
+    "name": "Plant leaves unfurl",
+    "trigger": "Second watering",
+    "reducedMotion": "Immediate static final state; all controls and text remain available"
+  },
+  {
+    "id": "flower-bloom",
+    "name": "Flower petals open",
+    "trigger": "Third watering",
+    "reducedMotion": "Immediate static final state; all controls and text remain available"
+  },
+  {
+    "id": "wish-rise",
+    "name": "Garden wish emerges beside flower",
+    "trigger": "Selected flower blooms",
+    "reducedMotion": "Immediate static final state; all controls and text remain available"
+  },
+  {
+    "id": "leaf-flip",
+    "name": "Leaf note turns over",
+    "trigger": "Turn leaf note",
+    "reducedMotion": "Immediate static final state; all controls and text remain available"
+  },
+  {
+    "id": "wish-keep",
+    "name": "Chosen wish slides into pocket",
+    "trigger": "Carry a wish forward",
+    "reducedMotion": "Immediate static final state; all controls and text remain available"
+  },
+  {
+    "id": "lantern-light",
+    "name": "Lantern window illuminates",
+    "trigger": "Open lantern chapter",
+    "reducedMotion": "Immediate static final state; all controls and text remain available"
+  },
+  {
+    "id": "firefly-arrive",
+    "name": "Fireflies enter the clearing",
+    "trigger": "Open lantern chapter",
+    "reducedMotion": "Immediate static final state; all controls and text remain available"
+  },
+  {
+    "id": "firefly-catch",
+    "name": "Collected firefly moves towards jar",
+    "trigger": "Collect firefly",
+    "reducedMotion": "Immediate static final state; all controls and text remain available"
+  },
+  {
+    "id": "jar-glow",
+    "name": "Jar light expands with collected lights",
+    "trigger": "Collect firefly",
+    "reducedMotion": "Immediate static final state; all controls and text remain available"
+  },
+  {
+    "id": "path-light",
+    "name": "Lantern path indicator lights up",
+    "trigger": "Collect all six fireflies",
+    "reducedMotion": "Immediate static final state; all controls and text remain available"
+  },
+  {
+    "id": "cabinet-open",
+    "name": "Memory cabinet doors open",
+    "trigger": "Open memory chapter",
+    "reducedMotion": "Immediate static final state; all controls and text remain available"
+  },
+  {
+    "id": "photo-sleeve",
+    "name": "Photograph slides out of sleeve",
+    "trigger": "Open memory chapter",
+    "reducedMotion": "Immediate static final state; all controls and text remain available"
+  },
+  {
+    "id": "caption-unfold",
+    "name": "Photo caption unfolds below sleeve",
+    "trigger": "Open memory chapter",
+    "reducedMotion": "Immediate static final state; all controls and text remain available"
+  },
+  {
+    "id": "memory-turn",
+    "name": "Selected future-memory note turns",
+    "trigger": "Choose future memory",
+    "reducedMotion": "Immediate static final state; all controls and text remain available"
+  },
+  {
+    "id": "candle-light",
+    "name": "Candles acquire a flame",
+    "trigger": "Open birthday chapter or relight",
+    "reducedMotion": "Immediate static final state; all controls and text remain available"
+  },
+  {
+    "id": "candle-out",
+    "name": "Candle smoke rises after wish",
+    "trigger": "Blow birthday candles",
+    "reducedMotion": "Immediate static final state; all controls and text remain available"
+  },
+  {
+    "id": "birthday-burst",
+    "name": "Paper leaves radiate around cake",
+    "trigger": "Blow birthday candles",
+    "reducedMotion": "Immediate static final state; all controls and text remain available"
+  },
+  {
+    "id": "celebration-key",
+    "name": "Celebration key rocks into its stand",
+    "trigger": "Blow birthday candles",
+    "reducedMotion": "Immediate static final state; all controls and text remain available"
+  },
+  {
+    "id": "letter-unfold",
+    "name": "Letter opens from folded paper",
+    "trigger": "Open letter chapter",
+    "reducedMotion": "Immediate static final state; all controls and text remain available"
+  },
+  {
+    "id": "page-corner",
+    "name": "Letter corner curls and settles",
+    "trigger": "Open letter chapter",
+    "reducedMotion": "Immediate static final state; all controls and text remain available"
+  },
+  {
+    "id": "signature-write",
+    "name": "Sender signature is revealed",
+    "trigger": "Open letter chapter",
+    "reducedMotion": "Immediate static final state; all controls and text remain available"
+  },
+  {
+    "id": "final-assemble",
+    "name": "Final garden frame assembles",
+    "trigger": "Open keepsake chapter",
+    "reducedMotion": "Immediate static final state; all controls and text remain available"
+  },
+  {
+    "id": "keys-place",
+    "name": "Collected keys settle into keepsake",
+    "trigger": "Open keepsake chapter",
+    "reducedMotion": "Immediate static final state; all controls and text remain available"
+  },
+  {
+    "id": "final-wish",
+    "name": "Final birthday wish unfolds from centre",
+    "trigger": "Open keepsake chapter",
+    "reducedMotion": "Immediate static final state; all controls and text remain available"
+  },
+  {
+    "id": "download-check",
+    "name": "Download confirmation draws a check",
+    "trigger": "Create keepsake successfully",
+    "reducedMotion": "Immediate static final state; all controls and text remain available"
+  },
+  {
+    "id": "scratch-erase",
+    "name": "Scratched seal withdraws",
+    "trigger": "Scratch threshold or direct reveal",
+    "reducedMotion": "Immediate static state; direct button available. Decorative reveal covers are omitted."
+  },
+  {
+    "id": "scratch-glint",
+    "name": "Small scratch-edge glint",
+    "trigger": "Move scratch pointer",
+    "reducedMotion": "Immediate static state; direct button available. Decorative reveal covers are omitted."
+  },
+  {
+    "id": "date-stamp",
+    "name": "Invitation date impression",
+    "trigger": "Invitation opens",
+    "reducedMotion": "Immediate static state; direct button available. Decorative reveal covers are omitted."
+  },
+  {
+    "id": "branch-draw",
+    "name": "Botanical path line traces",
+    "trigger": "Garden gate opens",
+    "reducedMotion": "Immediate static state; direct button available. Decorative reveal covers are omitted."
+  },
+  {
+    "id": "active-marker",
+    "name": "Active chapter marker settles",
+    "trigger": "Active chapter changes",
+    "reducedMotion": "Immediate static state; direct button available. Decorative reveal covers are omitted."
+  },
+  {
+    "id": "key-check",
+    "name": "Open-chapter tick appears",
+    "trigger": "Chapter unlock",
+    "reducedMotion": "Immediate static state; direct button available. Decorative reveal covers are omitted."
+  },
+  {
+    "id": "replay-return",
+    "name": "Replay opening returns into place",
+    "trigger": "Replay a chapter",
+    "reducedMotion": "Immediate static state; direct button available. Decorative reveal covers are omitted."
+  },
+  {
+    "id": "ring-reset",
+    "name": "Keyring resets its empty slots",
+    "trigger": "Confirm full reset",
+    "reducedMotion": "Immediate static state; direct button available. Decorative reveal covers are omitted."
+  },
+  {
+    "id": "garland-set",
+    "name": "Garland is drawn around frame",
+    "trigger": "Garland photograph reveal",
+    "reducedMotion": "Immediate static state; direct button available. Decorative reveal covers are omitted."
+  },
+  {
+    "id": "hanging-frame",
+    "name": "Hanging frame ornament settles",
+    "trigger": "Hanging photograph reveal",
+    "reducedMotion": "Immediate static state; direct button available. Decorative reveal covers are omitted."
+  },
+  {
+    "id": "window-fold",
+    "name": "Paper window folds away",
+    "trigger": "Window photograph reveal",
+    "reducedMotion": "Immediate static state; direct button available. Decorative reveal covers are omitted."
+  },
+  {
+    "id": "ribbon-untie",
+    "name": "Ribbon releases sideways",
+    "trigger": "Devotional ribbon or birthday gift",
+    "reducedMotion": "Immediate static state; direct button available. Decorative reveal covers are omitted."
+  },
+  {
+    "id": "gift-open",
+    "name": "Gift lid tips open",
+    "trigger": "Finish birthday ribbon unlock",
+    "reducedMotion": "Immediate static state; direct button available. Decorative reveal covers are omitted."
+  },
+  {
+    "id": "envelope-trace",
+    "name": "Envelope seam is traced",
+    "trigger": "Trace seam or use direct button",
+    "reducedMotion": "Immediate static state; direct button available. Decorative reveal covers are omitted."
+  },
+  {
+    "id": "shake-settle",
+    "name": "Lantern settles after shaking",
+    "trigger": "Third direction change or shake button",
+    "reducedMotion": "Immediate static state; direct button available. Decorative reveal covers are omitted."
+  },
+  {
+    "id": "lantern-sway",
+    "name": "Lantern window catches the light",
+    "trigger": "Lantern moves left or right",
+    "reducedMotion": "Immediate static state; direct button available. Decorative reveal covers are omitted."
+  },
+  {
+    "id": "card-part",
+    "name": "Final prayer covering parts",
+    "trigger": "Last photograph reveal",
+    "reducedMotion": "Immediate static state; direct button available. Decorative reveal covers are omitted."
+  },
+  {
+    "id": "cabinet-slide",
+    "name": "Wooden cabinet panel slides away",
+    "trigger": "Complete memory cabinet unlock",
+    "reducedMotion": "Immediate static state; direct button available. Decorative reveal covers are omitted."
+  },
+  {
+    "id": "garden-title",
+    "name": "Garden title expands into view",
+    "trigger": "Garden chapter unlock",
+    "reducedMotion": "Immediate static state; direct button available. Decorative reveal covers are omitted."
+  }
+]

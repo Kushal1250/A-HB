@@ -1,0 +1,181 @@
+/* Named, bounded animation sequences. All have a static reduced-motion state. */
+@keyframes j-seal-break { from {transform:rotate(0) scale(1);} to {transform:rotate(-18deg) scale(.65);opacity:0;} }
+.j-root[data-motion="on"] [data-anim="seal-break"] { animation: j-seal-break var(--j-duration,.65s) cubic-bezier(.2,.7,.3,1) both; }
+@keyframes j-invite-fold { from {transform:perspective(700px) rotateX(-75deg);transform-origin:top;} to {transform:perspective(700px) rotateX(0);transform-origin:top;} }
+.j-root[data-motion="on"] [data-anim="invite-fold"] { animation: j-invite-fold var(--j-duration,.65s) cubic-bezier(.2,.7,.3,1) both; }
+@keyframes j-name-wipe { from {clip-path:inset(0 100% 0 0);} to {clip-path:inset(0 0 0 0);} }
+.j-root[data-motion="on"] [data-anim="name-wipe"] { animation: j-name-wipe var(--j-duration,.65s) cubic-bezier(.2,.7,.3,1) both; }
+@keyframes j-gate-key { from {transform:translateX(-35px) rotate(-15deg);} to {transform:translateX(0) rotate(0);} }
+.j-root[data-motion="on"] [data-anim="gate-key"] { animation: j-gate-key var(--j-duration,.65s) cubic-bezier(.2,.7,.3,1) both; }
+@keyframes j-gate-panels { from {clip-path:inset(0 0 100% 0);} to {clip-path:inset(0 0 0 0);} }
+.j-root[data-motion="on"] [data-anim="gate-panels"] { animation: j-gate-panels var(--j-duration,.65s) cubic-bezier(.2,.7,.3,1) both; }
+@keyframes j-path-glow { from {transform:scaleY(.1);transform-origin:bottom;opacity:.2;} to {transform:scaleY(1);transform-origin:bottom;opacity:1;} }
+.j-root[data-motion="on"] [data-anim="path-glow"] { animation: j-path-glow var(--j-duration,.65s) cubic-bezier(.2,.7,.3,1) both; }
+@keyframes j-border-draw { from {stroke-dashoffset:1200;} to {stroke-dashoffset:0;} }
+.j-root[data-motion="on"] [data-anim="border-draw"] { animation: j-border-draw var(--j-duration,.65s) cubic-bezier(.2,.7,.3,1) both; }
+@keyframes j-key-arrive { from {transform:translateY(-22px) rotate(-25deg);opacity:0;} to {transform:translateY(0) rotate(0);opacity:1;} }
+.j-root[data-motion="on"] [data-anim="key-arrive"] { animation: j-key-arrive var(--j-duration,.65s) cubic-bezier(.2,.7,.3,1) both; }
+@keyframes j-key-select { from {transform:rotate(-12deg) scale(.9);} to {transform:rotate(0) scale(1.08);} }
+.j-root[data-motion="on"] [data-anim="key-select"] { animation: j-key-select var(--j-duration,.65s) cubic-bezier(.2,.7,.3,1) both; }
+@keyframes j-key-travel { from {transform:translateX(-65px) rotate(-10deg);} to {transform:translateX(0) rotate(0);} }
+.j-root[data-motion="on"] [data-anim="key-travel"] { animation: j-key-travel var(--j-duration,.65s) cubic-bezier(.2,.7,.3,1) both; }
+@keyframes j-key-turn { from {transform:rotate(0);} to {transform:rotate(90deg);} }
+.j-root[data-motion="on"] [data-anim="key-turn"] { animation: j-key-turn var(--j-duration,.65s) cubic-bezier(.2,.7,.3,1) both; }
+@keyframes j-lock-release { from {transform:translateY(0);} to {transform:translateY(-9px) rotate(-12deg);} }
+.j-root[data-motion="on"] [data-anim="lock-release"] { animation: j-lock-release var(--j-duration,.65s) cubic-bezier(.2,.7,.3,1) both; }
+@keyframes j-map-progress { from {transform:scaleX(.1);transform-origin:left;} to {transform:scaleX(1);transform-origin:left;} }
+.j-root[data-motion="on"] [data-anim="map-progress"] { animation: j-map-progress var(--j-duration,.65s) cubic-bezier(.2,.7,.3,1) both; }
+@keyframes j-key-settle { from {transform:translateY(-14px) rotate(20deg);} to {transform:translateY(0) rotate(0);} }
+.j-root[data-motion="on"] [data-anim="key-settle"] { animation: j-key-settle var(--j-duration,.65s) cubic-bezier(.2,.7,.3,1) both; }
+@keyframes j-ring-open { from {clip-path:inset(0 0 100% 0);transform:translateY(-5px);} to {clip-path:inset(0 0 0 0);transform:translateY(0);} }
+.j-root[data-motion="on"] [data-anim="ring-open"] { animation: j-ring-open var(--j-duration,.65s) cubic-bezier(.2,.7,.3,1) both; }
+@keyframes j-chapter-path { from {transform:translateY(20px);opacity:0;} to {transform:translateY(0);opacity:1;} }
+.j-root[data-motion="on"] [data-anim="chapter-path"] { animation: j-chapter-path var(--j-duration,.65s) cubic-bezier(.2,.7,.3,1) both; }
+@keyframes j-arch-draw { from {stroke-dashoffset:900;} to {stroke-dashoffset:0;} }
+.j-root[data-motion="on"] [data-anim="arch-draw"] { animation: j-arch-draw var(--j-duration,.65s) cubic-bezier(.2,.7,.3,1) both; }
+@keyframes j-curtain-part { from {transform:scaleX(1);} to {transform:scaleX(0);} }
+.j-root[data-motion="on"] [data-anim="curtain-part"] { animation: j-curtain-part var(--j-duration,.65s) cubic-bezier(.2,.7,.3,1) both; }
+@keyframes j-frame-trace { from {stroke-dashoffset:1400;opacity:.3;} to {stroke-dashoffset:0;opacity:1;} }
+.j-root[data-motion="on"] [data-anim="frame-trace"] { animation: j-frame-trace var(--j-duration,.65s) cubic-bezier(.2,.7,.3,1) both; }
+@keyframes j-door-swing { from {transform:perspective(600px) rotateY(0);} to {transform:perspective(600px) rotateY(92deg);} }
+.j-root[data-motion="on"] [data-anim="door-swing"] { animation: j-door-swing var(--j-duration,.65s) cubic-bezier(.2,.7,.3,1) both; }
+@keyframes j-lamp-ignite { from {transform:scaleY(0);transform-origin:bottom;} to {transform:scaleY(1);transform-origin:bottom;} }
+.j-root[data-motion="on"] [data-anim="lamp-ignite"] { animation: j-lamp-ignite var(--j-duration,.65s) cubic-bezier(.2,.7,.3,1) both; }
+@keyframes j-lamp-flicker { from {transform:skewX(-4deg) scaleX(.85);} to {transform:skewX(3deg) scaleX(1);} }
+.j-root[data-motion="on"] [data-anim="lamp-flicker"] { animation: j-lamp-flicker var(--j-duration,.65s) cubic-bezier(.2,.7,.3,1) both; }
+@keyframes j-lamp-halo { from {transform:scale(.5);opacity:0;} to {transform:scale(1);opacity:1;} }
+.j-root[data-motion="on"] [data-anim="lamp-halo"] { animation: j-lamp-halo var(--j-duration,.65s) cubic-bezier(.2,.7,.3,1) both; }
+@keyframes j-flower-place { from {transform:translateY(-24px) rotate(-45deg);opacity:0;} to {transform:translateY(0) rotate(0);opacity:1;} }
+.j-root[data-motion="on"] [data-anim="flower-place"] { animation: j-flower-place var(--j-duration,.65s) cubic-bezier(.2,.7,.3,1) both; }
+@keyframes j-petals-settle { from {transform:scaleX(.2) translateY(-8px);} to {transform:scaleX(1) translateY(0);} }
+.j-root[data-motion="on"] [data-anim="petals-settle"] { animation: j-petals-settle var(--j-duration,.65s) cubic-bezier(.2,.7,.3,1) both; }
+@keyframes j-prayer-flap { from {transform:rotateX(-80deg);transform-origin:top;} to {transform:rotateX(0);transform-origin:top;} }
+.j-root[data-motion="on"] [data-anim="prayer-flap"] { animation: j-prayer-flap var(--j-duration,.65s) cubic-bezier(.2,.7,.3,1) both; }
+@keyframes j-blessing-unfold { from {clip-path:inset(0 100% 0 0);transform:translateX(-8px);} to {clip-path:inset(0 0 0 0);transform:translateX(0);} }
+.j-root[data-motion="on"] [data-anim="blessing-unfold"] { animation: j-blessing-unfold var(--j-duration,.65s) cubic-bezier(.2,.7,.3,1) both; }
+@keyframes j-next-door { from {transform:translateX(18px);opacity:0;} to {transform:translateX(0);opacity:1;} }
+.j-root[data-motion="on"] [data-anim="next-door"] { animation: j-next-door var(--j-duration,.65s) cubic-bezier(.2,.7,.3,1) both; }
+@keyframes j-page-turn { from {transform:perspective(800px) rotateY(0);transform-origin:left;} to {transform:perspective(800px) rotateY(-100deg);transform-origin:left;} }
+.j-root[data-motion="on"] [data-anim="page-turn"] { animation: j-page-turn var(--j-duration,.65s) cubic-bezier(.2,.7,.3,1) both; }
+@keyframes j-video-open { from {clip-path:inset(50% 0 50% 0);} to {clip-path:inset(0 0 0 0);} }
+.j-root[data-motion="on"] [data-anim="video-open"] { animation: j-video-open var(--j-duration,.65s) cubic-bezier(.2,.7,.3,1) both; }
+@keyframes j-prayer-card { from {transform:translateY(15px) rotate(1deg);opacity:0;} to {transform:translateY(0) rotate(0);opacity:1;} }
+.j-root[data-motion="on"] [data-anim="prayer-card"] { animation: j-prayer-card var(--j-duration,.65s) cubic-bezier(.2,.7,.3,1) both; }
+@keyframes j-blessing-key { from {stroke-dashoffset:300;} to {stroke-dashoffset:0;} }
+.j-root[data-motion="on"] [data-anim="blessing-key"] { animation: j-blessing-key var(--j-duration,.65s) cubic-bezier(.2,.7,.3,1) both; }
+@keyframes j-seed-drop { from {transform:translateY(-35px) rotate(-90deg);} to {transform:translateY(0) rotate(0);} }
+.j-root[data-motion="on"] [data-anim="seed-drop"] { animation: j-seed-drop var(--j-duration,.65s) cubic-bezier(.2,.7,.3,1) both; }
+@keyframes j-rain-fall { from {transform:translateY(-45px);opacity:1;} to {transform:translateY(15px);opacity:0;} }
+.j-root[data-motion="on"] [data-anim="rain-fall"] { animation: j-rain-fall var(--j-duration,.65s) cubic-bezier(.2,.7,.3,1) both; }
+@keyframes j-stem-grow { from {transform:scaleY(0);transform-origin:bottom;} to {transform:scaleY(1);transform-origin:bottom;} }
+.j-root[data-motion="on"] [data-anim="stem-grow"] { animation: j-stem-grow var(--j-duration,.65s) cubic-bezier(.2,.7,.3,1) both; }
+@keyframes j-leaf-unfurl { from {transform:scaleX(.05) rotate(-10deg);} to {transform:scaleX(1) rotate(0);} }
+.j-root[data-motion="on"] [data-anim="leaf-unfurl"] { animation: j-leaf-unfurl var(--j-duration,.65s) cubic-bezier(.2,.7,.3,1) both; }
+@keyframes j-flower-bloom { from {transform:scale(.1) rotate(-35deg);} to {transform:scale(1) rotate(0);} }
+.j-root[data-motion="on"] [data-anim="flower-bloom"] { animation: j-flower-bloom var(--j-duration,.65s) cubic-bezier(.2,.7,.3,1) both; }
+@keyframes j-wish-rise { from {transform:translateY(12px);clip-path:inset(100% 0 0 0);} to {transform:translateY(0);clip-path:inset(0 0 0 0);} }
+.j-root[data-motion="on"] [data-anim="wish-rise"] { animation: j-wish-rise var(--j-duration,.65s) cubic-bezier(.2,.7,.3,1) both; }
+@keyframes j-leaf-flip { from {transform:perspective(600px) rotateY(-80deg);} to {transform:perspective(600px) rotateY(0);} }
+.j-root[data-motion="on"] [data-anim="leaf-flip"] { animation: j-leaf-flip var(--j-duration,.65s) cubic-bezier(.2,.7,.3,1) both; }
+@keyframes j-wish-keep { from {transform:translateX(-14px) scale(.95);} to {transform:translateX(0) scale(1);} }
+.j-root[data-motion="on"] [data-anim="wish-keep"] { animation: j-wish-keep var(--j-duration,.65s) cubic-bezier(.2,.7,.3,1) both; }
+@keyframes j-lantern-light { from {opacity:.1;transform:scale(.8);} to {opacity:1;transform:scale(1);} }
+.j-root[data-motion="on"] [data-anim="lantern-light"] { animation: j-lantern-light var(--j-duration,.65s) cubic-bezier(.2,.7,.3,1) both; }
+@keyframes j-firefly-arrive { from {transform:translate(-20px,10px);opacity:0;} to {transform:translate(0,0);opacity:1;} }
+.j-root[data-motion="on"] [data-anim="firefly-arrive"] { animation: j-firefly-arrive var(--j-duration,.65s) cubic-bezier(.2,.7,.3,1) both; }
+@keyframes j-firefly-catch { from {transform:translate(0,0);opacity:1;} to {transform:translate(45px,55px) scale(.2);opacity:0;} }
+.j-root[data-motion="on"] [data-anim="firefly-catch"] { animation: j-firefly-catch var(--j-duration,.65s) cubic-bezier(.2,.7,.3,1) both; }
+@keyframes j-jar-glow { from {box-shadow:0 0 0 #d8be6a00;} to {box-shadow:0 0 28px #d8be6a55;} }
+.j-root[data-motion="on"] [data-anim="jar-glow"] { animation: j-jar-glow var(--j-duration,.65s) cubic-bezier(.2,.7,.3,1) both; }
+@keyframes j-path-light { from {clip-path:inset(0 100% 0 0);opacity:.3;} to {clip-path:inset(0 0 0 0);opacity:1;} }
+.j-root[data-motion="on"] [data-anim="path-light"] { animation: j-path-light var(--j-duration,.65s) cubic-bezier(.2,.7,.3,1) both; }
+@keyframes j-cabinet-open { from {transform:perspective(800px) rotateY(-8deg);opacity:.2;} to {transform:perspective(800px) rotateY(0);opacity:1;} }
+.j-root[data-motion="on"] [data-anim="cabinet-open"] { animation: j-cabinet-open var(--j-duration,.65s) cubic-bezier(.2,.7,.3,1) both; }
+@keyframes j-photo-sleeve { from {transform:translateY(35px);clip-path:inset(20% 0 0 0);} to {transform:translateY(0);clip-path:inset(0 0 0 0);} }
+.j-root[data-motion="on"] [data-anim="photo-sleeve"] { animation: j-photo-sleeve var(--j-duration,.65s) cubic-bezier(.2,.7,.3,1) both; }
+@keyframes j-caption-unfold { from {transform:scaleY(0);transform-origin:top;} to {transform:scaleY(1);transform-origin:top;} }
+.j-root[data-motion="on"] [data-anim="caption-unfold"] { animation: j-caption-unfold var(--j-duration,.65s) cubic-bezier(.2,.7,.3,1) both; }
+@keyframes j-memory-turn { from {transform:rotate(-3deg) translateX(-5px);} to {transform:rotate(0) translateX(0);} }
+.j-root[data-motion="on"] [data-anim="memory-turn"] { animation: j-memory-turn var(--j-duration,.65s) cubic-bezier(.2,.7,.3,1) both; }
+@keyframes j-candle-light { from {transform:scale(0);transform-origin:bottom;opacity:0;} to {transform:scale(1);transform-origin:bottom;opacity:1;} }
+.j-root[data-motion="on"] [data-anim="candle-light"] { animation: j-candle-light var(--j-duration,.65s) cubic-bezier(.2,.7,.3,1) both; }
+@keyframes j-candle-out { from {transform:translateY(10px) scaleX(.3);opacity:.7;} to {transform:translateY(-35px) scaleX(1.4);opacity:0;} }
+.j-root[data-motion="on"] [data-anim="candle-out"] { animation: j-candle-out var(--j-duration,.65s) cubic-bezier(.2,.7,.3,1) both; }
+@keyframes j-birthday-burst { from {transform:translate(0,0) rotate(0);opacity:1;} to {transform:translate(var(--dx,80px),var(--dy,-50px)) rotate(120deg);opacity:0;} }
+.j-root[data-motion="on"] [data-anim="birthday-burst"] { animation: j-birthday-burst var(--j-duration,.65s) cubic-bezier(.2,.7,.3,1) both; }
+@keyframes j-celebration-key { from {transform:rotate(-30deg) translateY(-10px);} to {transform:rotate(0) translateY(0);} }
+.j-root[data-motion="on"] [data-anim="celebration-key"] { animation: j-celebration-key var(--j-duration,.65s) cubic-bezier(.2,.7,.3,1) both; }
+@keyframes j-letter-unfold { from {transform:perspective(900px) rotateX(-18deg);transform-origin:top;opacity:.2;} to {transform:perspective(900px) rotateX(0);transform-origin:top;opacity:1;} }
+.j-root[data-motion="on"] [data-anim="letter-unfold"] { animation: j-letter-unfold var(--j-duration,.65s) cubic-bezier(.2,.7,.3,1) both; }
+@keyframes j-page-corner { from {transform:rotate(-35deg) scale(.3);transform-origin:top right;} to {transform:rotate(0) scale(1);transform-origin:top right;} }
+.j-root[data-motion="on"] [data-anim="page-corner"] { animation: j-page-corner var(--j-duration,.65s) cubic-bezier(.2,.7,.3,1) both; }
+@keyframes j-signature-write { from {clip-path:inset(0 100% 0 0);transform:skewX(-4deg);} to {clip-path:inset(0 0 0 0);transform:skewX(0);} }
+.j-root[data-motion="on"] [data-anim="signature-write"] { animation: j-signature-write var(--j-duration,.65s) cubic-bezier(.2,.7,.3,1) both; }
+@keyframes j-final-assemble { from {transform:scale(.92);border-radius:40%;} to {transform:scale(1);border-radius:8px;} }
+.j-root[data-motion="on"] [data-anim="final-assemble"] { animation: j-final-assemble var(--j-duration,.65s) cubic-bezier(.2,.7,.3,1) both; }
+@keyframes j-keys-place { from {transform:translateY(-25px) rotate(40deg);opacity:0;} to {transform:translateY(0) rotate(0);opacity:1;} }
+.j-root[data-motion="on"] [data-anim="keys-place"] { animation: j-keys-place var(--j-duration,.65s) cubic-bezier(.2,.7,.3,1) both; }
+@keyframes j-final-wish { from {clip-path:inset(0 50% 0 50%);} to {clip-path:inset(0 0 0 0);} }
+.j-root[data-motion="on"] [data-anim="final-wish"] { animation: j-final-wish var(--j-duration,.65s) cubic-bezier(.2,.7,.3,1) both; }
+@keyframes j-download-check { from {stroke-dashoffset:60;} to {stroke-dashoffset:0;} }
+.j-root[data-motion="on"] [data-anim="download-check"] { animation: j-download-check var(--j-duration,.65s) cubic-bezier(.2,.7,.3,1) both; }
+.j-root[data-motion="off"] [data-anim] { animation:none!important; }
+.j-root [data-onscreen="false"] *,.j-root[data-document-hidden="true"] * { animation-play-state:paused!important; }
+@media(prefers-reduced-motion:reduce){.j-root [data-anim]{animation:none!important}}
+
+@keyframes j-scratch-erase {from{transform:scaleX(1);opacity:1;}to{transform:scaleX(.03);opacity:0;}}
+.j-root[data-motion="on"] [data-anim="scratch-erase"]{animation:j-scratch-erase var(--j-duration,.65s) ease both;}
+
+@keyframes j-scratch-glint {from{transform:scale(.2) rotate(0);opacity:1;}to{transform:scale(1.6) rotate(90deg);opacity:0;}}
+.j-root[data-motion="on"] [data-anim="scratch-glint"]{animation:j-scratch-glint var(--j-duration,.65s) ease both;}
+
+@keyframes j-date-stamp {from{transform:scale(1.4) rotate(-7deg);opacity:0;}to{transform:scale(1) rotate(-2deg);opacity:1;}}
+.j-root[data-motion="on"] [data-anim="date-stamp"]{animation:j-date-stamp var(--j-duration,.65s) ease both;}
+
+@keyframes j-branch-draw {from{stroke-dashoffset:500;}to{stroke-dashoffset:0;}}
+.j-root[data-motion="on"] [data-anim="branch-draw"]{animation:j-branch-draw var(--j-duration,.65s) ease both;}
+
+@keyframes j-active-marker {from{transform:translateY(-4px);box-shadow:inset 0 -1px currentColor;}to{transform:translateY(0);box-shadow:inset 0 -3px currentColor;}}
+.j-root[data-motion="on"] [data-anim="active-marker"]{animation:j-active-marker var(--j-duration,.65s) ease both;}
+
+@keyframes j-key-check {from{clip-path:inset(0 100% 0 0);}to{clip-path:inset(0 0 0 0);}}
+.j-root[data-motion="on"] [data-anim="key-check"]{animation:j-key-check var(--j-duration,.65s) ease both;}
+
+@keyframes j-replay-return {from{transform:translateX(-20px);opacity:.2;}to{transform:translateX(0);opacity:1;}}
+.j-root[data-motion="on"] [data-anim="replay-return"]{animation:j-replay-return var(--j-duration,.65s) ease both;}
+
+@keyframes j-ring-reset {from{transform:scale(.94);opacity:.3;}to{transform:scale(1);opacity:1;}}
+.j-root[data-motion="on"] [data-anim="ring-reset"]{animation:j-ring-reset var(--j-duration,.65s) ease both;}
+
+@keyframes j-garland-set {from{stroke-dashoffset:600;}to{stroke-dashoffset:0;}}
+.j-root[data-motion="on"] [data-anim="garland-set"]{animation:j-garland-set var(--j-duration,.65s) ease both;}
+
+@keyframes j-hanging-frame {from{transform:rotate(-4deg);}to{transform:rotate(0);}}
+.j-root[data-motion="on"] [data-anim="hanging-frame"]{animation:j-hanging-frame var(--j-duration,.65s) ease both;}
+
+@keyframes j-window-fold {from{transform:perspective(700px) rotateX(0);}to{transform:perspective(700px) rotateX(95deg);}}
+.j-root[data-motion="on"] [data-anim="window-fold"]{animation:j-window-fold var(--j-duration,.65s) ease both;}
+
+@keyframes j-ribbon-untie {from{transform:scaleX(1) translateX(0);opacity:1;}to{transform:scaleX(.1) translateX(120px);opacity:0;}}
+.j-root[data-motion="on"] [data-anim="ribbon-untie"]{animation:j-ribbon-untie var(--j-duration,.65s) ease both;}
+
+@keyframes j-gift-open {from{transform:perspective(500px) rotateX(0);transform-origin:top;}to{transform:perspective(500px) rotateX(-65deg);transform-origin:top;}}
+.j-root[data-motion="on"] [data-anim="gift-open"]{animation:j-gift-open var(--j-duration,.65s) ease both;}
+
+@keyframes j-envelope-trace {from{stroke-dashoffset:300;}to{stroke-dashoffset:0;}}
+.j-root[data-motion="on"] [data-anim="envelope-trace"]{animation:j-envelope-trace var(--j-duration,.65s) ease both;}
+
+@keyframes j-shake-settle {from{transform:rotate(8deg);}to{transform:rotate(0);}}
+.j-root[data-motion="on"] [data-anim="shake-settle"]{animation:j-shake-settle var(--j-duration,.65s) ease both;}
+
+@keyframes j-lantern-sway {from{transform:skewX(-3deg);opacity:.65;}to{transform:skewX(0);opacity:1;}}
+.j-root[data-motion="on"] [data-anim="lantern-sway"]{animation:j-lantern-sway var(--j-duration,.65s) ease both;}
+
+@keyframes j-card-part {from{clip-path:inset(0 0 0 0);}to{clip-path:inset(0 50% 0 50%);}}
+.j-root[data-motion="on"] [data-anim="card-part"]{animation:j-card-part var(--j-duration,.65s) ease both;}
+
+@keyframes j-cabinet-slide {from{transform:translateX(0);}to{transform:translateX(-70px);}}
+.j-root[data-motion="on"] [data-anim="cabinet-slide"]{animation:j-cabinet-slide var(--j-duration,.65s) ease both;}
+
+@keyframes j-garden-title {from{letter-spacing:4px;clip-path:inset(0 100% 0 0);}to{letter-spacing:-2px;clip-path:inset(0 0 0 0);}}
+.j-root[data-motion="on"] [data-anim="garden-title"]{animation:j-garden-title var(--j-duration,.65s) ease both;}

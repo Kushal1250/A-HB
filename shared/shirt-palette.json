@@ -1,0 +1,24 @@
+{
+  "samplesRGB": [
+    [
+      102,
+      72,
+      54
+    ],
+    [
+      88,
+      60,
+      43
+    ],
+    [
+      84,
+      61,
+      48
+    ]
+  ],
+  "referenceBrown": "#6B5141",
+  "defaultText": "#153D2C",
+  "reversedText": "#49372C",
+  "readingSurface": "#F3E8D5",
+  "note": "Representative shirt midtones sampled from the supplied photograph. Cream reading surfaces retain dark-text contrast."
+}

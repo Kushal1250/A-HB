@@ -1,0 +1,1 @@
+Production build, both content schemas, all 8 gallery captions and real HTTP delivery of 7 original PNG files passed. Unrelated saved content and existing uploaded media were compared with the supplied scripts(1).zip and retained unchanged. ZIP CRC and extraction verified during packaging. Windows execution and visual browser review remain target-device checks.

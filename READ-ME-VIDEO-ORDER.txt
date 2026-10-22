@@ -1,0 +1,5 @@
+Stop the server with Ctrl+C. Extract this ZIP. Copy the extracted client folder INTO your existing birthday project folder, merging it with the existing client folder. Choose Replace files when asked. Do not delete the old client folder or its node_modules. Then run npm start in the project root and refresh with Ctrl+F5.
+
+The display order is original clips 53,1,4,7,48,8,43,22,2,3,37,13,15,16,50,40,17,18,45,33,34,35,41, followed by remaining clips in their existing order. This is a fixed frontend display order. Changing the order of those selected clips in Admin will not override it; edit client/src/memoryVideoOrder.js to change the preferred sequence. The other videos follow Admin order.
+
+Video files, photos, songs, captions and account data are kept in your existing project; they are not bundled or replaced by this update. The production build and all 78 frontend tests pass.
