@@ -25,8 +25,8 @@ const fail = (message, status = 400) =>
 const referenceIds = (state) => new Set([...contentReferences(state.draft), ...contentReferences(state.published)]);
 function validateReferences(content, state) {
   validateVideo(content, state);
-  for(const v of content.memoryVideos||[])if(!state.media.some(m=>m.id===v.mediaId&&m.kind==='video'))throw fail('A memory video is missing. Choose another MP4 in the studio.',422);
-  for(const ch of normaliseJourney(content.journey).chapters)if(ch.trackId && !state.media.some(m=>m.id===ch.trackId&&m.kind==='audio'))throw fail('A chapter music track is missing. Choose another track in the studio.',422);
+  for (const v of content.memoryVideos || []) if (!state.media.some(m => m.id === v.mediaId && m.kind === 'video')) throw fail('A memory video is missing. Choose another MP4 in the studio.', 422);
+  for (const ch of normaliseJourney(content.journey).chapters) if (ch.trackId && !state.media.some(m => m.id === ch.trackId && m.kind === 'audio')) throw fail('A chapter music track is missing. Choose another track in the studio.', 422);
   for (const p of [...content.photos, ...(content.blessings?.photos || [])])
     if (!state.media.some((m) => m.id === p.mediaId && m.kind === "image"))
       throw fail(
@@ -68,8 +68,8 @@ function present(content, state, privateLinks = false) {
   return {
     ...content,
     blessings: resolveBlessings(content, state, mediaView, privateLinks),
-    journey:{...normaliseJourney(content.journey),chapters:normaliseJourney(content.journey).chapters.map(ch=>({...ch,track:ch.trackId?mediaView(state.media.find(m=>m.id===ch.trackId),state,privateLinks):null}))},
-    memoryVideos: (content.memoryVideos||[]).filter(v=>privateLinks||(v.visible&&content.sections.memories&&normaliseJourney(content.journey).chapters.some(c=>c.id==='memories'&&c.visible))).map(v=>({...v,...mediaView(state.media.find(m=>m.id===v.mediaId),state,privateLinks)})),
+    journey: { ...normaliseJourney(content.journey), chapters: normaliseJourney(content.journey).chapters.map(ch => ({ ...ch, track: ch.trackId ? mediaView(state.media.find(m => m.id === ch.trackId), state, privateLinks) : null })) },
+    memoryVideos: (content.memoryVideos || []).filter(v => privateLinks || (v.visible && content.sections.memories && normaliseJourney(content.journey).chapters.some(c => c.id === 'memories' && c.visible))).map(v => ({ ...v, ...mediaView(state.media.find(m => m.id === v.mediaId), state, privateLinks) })),
     photos: content.photos.map((p) => ({
       ...p,
       ...mediaView(
@@ -80,10 +80,10 @@ function present(content, state, privateLinks = false) {
     })),
     music: content.musicId
       ? mediaView(
-          state.media.find((m) => m.id === content.musicId),
-          state,
-          privateLinks,
-        )
+        state.media.find((m) => m.id === content.musicId),
+        state,
+        privateLinks,
+      )
       : null,
   };
 }
@@ -112,8 +112,11 @@ export function createApp({
     }),
   );
   app.use((req, res, next) => {
-    if (!["localhost", "127.0.0.1", "[::1]", "::1"].includes(req.hostname))
-      return next(fail("This app accepts localhost requests only.", 403));
+    if (process.env.NODE_ENV !== "production" && !["localhost", "127.0.0.1", "[::1]", "::1"].includes(req.hostname)) {
+      return next(
+        fail("This app accepts localhost requests only.", 403),
+      );
+    }
     const origin = req.get("origin");
     if (origin && origin !== `http://${req.get("host")}`)
       return next(fail("Requests from another website are not allowed.", 403));
@@ -141,8 +144,8 @@ export function createApp({
   });
   api.get("/garden-entrance/photo", (_req, res, next) => {
     res.type("png");
-    res.sendFile(path.resolve(store.directory,"garden-entrance.png"),error=>{
-      if(error)next(error.code === "ENOENT" ? fail("Garden portrait not found.",404) : error);
+    res.sendFile(path.resolve(store.directory, "garden-entrance.png"), error => {
+      if (error) next(error.code === "ENOENT" ? fail("Garden portrait not found.", 404) : error);
     });
   });
   api.get("/birthday", async (_req, res) => {
