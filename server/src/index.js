@@ -5,7 +5,8 @@ const store = createStore();
 try {
   await store.ready;
   const app = createApp({ store });
-  const server = app.listen(3000, "127.0.0.1", () => {
+  const port = Number(process.env.PORT || 3000);
+  const server = app.listen(port, "0.0.0.0", ()  => {
     console.log(
       "\n  THE GARDEN OF OCTOBER — For Anu, from Kushal.\n\n  Open:   http://localhost:3000\n  Studio: http://localhost:3000/admin\n\n  Local files only. Press Ctrl+C to stop.\n",
     );
