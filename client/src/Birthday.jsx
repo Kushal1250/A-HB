@@ -411,6 +411,15 @@ function LegacyBirthday({ content: c, preview = false, status = "" }) {
         </p>
       )}
       <main id={id("main")}>
+        <figure className="top-bouquet">
+          <img
+            src="/birthday-bouquet.jpeg"
+            alt={`A birthday bouquet of pink, red and white roses for ${c.name}`}
+            width="720"
+            height="1280"
+            fetchpriority="high"
+          />
+        </figure>
         <section
           className="garden-hero"
           id={id("welcome")}
