@@ -1,0 +1,28 @@
+{
+  "media": [
+    {
+      "id": "2357d169ba57fdba2ced966e",
+      "kind": "video",
+      "filename": "2357d169ba57fdba2ced966e.mp4",
+      "thumbnailName": "2357d169ba57fdba2ced966e-thumb.webp",
+      "mime": "video/mp4",
+      "originalName": "WhatsApp Video 2026-10-23 at 9.43.30 AM.mp4",
+      "width": 720,
+      "height": 1280,
+      "duration": 41.120998,
+      "createdAt": "2026-10-23T04:20:11.047297+00:00"
+    }
+  ],
+  "memoryVideos": [
+    {
+      "id": "c52e88ad-96b6-4e02-875d-342605e638b2",
+      "mediaId": "2357d169ba57fdba2ced966e",
+      "title": "A little moment to replay \u00b7 61",
+      "caption": "Here's a little moment to smile about, Anu.",
+      "visible": true
+    }
+  ],
+  "insertAfter": {
+    "2357d169ba57fdba2ced966e": "648520246ed0d8025afbbff1"
+  }
+}

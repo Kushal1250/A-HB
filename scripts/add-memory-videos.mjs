@@ -6,13 +6,13 @@
 // For every target folder that contains birthday.json it will:
 //   - copy the MP4 + poster files into <target>/uploads/ (never overwrites)
 //   - add the media records and the Video memories entries to BOTH the draft
-//     and the published content, at the end of the list
+//     and the published content (at the end, or right after a chosen clip)
 //   - keep a backup next to the file the first time (birthday.before-videos.json)
 // It is safe to run twice: clips that are already present are skipped.
 // Administrator accounts, sessions and every other setting are left untouched.
 //
 // STOP the server (Ctrl+C) before running this against data/.
-import { copyFile, mkdir, readFile, rename, stat, writeFile } from "node:fs/promises";
+import { copyFile, mkdir, readFile, readdir, rename, stat, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -24,9 +24,17 @@ const targets = (process.argv.length > 2 ? process.argv.slice(2) : ["data", "see
 const exists = (p) => stat(p).then(() => true, () => false);
 
 try {
-  if (!(await exists(path.join(source, "manifest.json"))))
-    throw new Error(`Could not find ${path.join(source, "manifest.json")}. Extract the update ZIP into the project folder first.`);
-  const manifest = JSON.parse(await readFile(path.join(source, "manifest.json"), "utf8"));
+  // Every manifest*.json in new-videos/ is applied (oldest name first).
+  const manifestFiles = (await exists(source) ? await readdir(source) : []).filter((n) => /^manifest.*\.json$/.test(n)).sort();
+  if (!manifestFiles.length)
+    throw new Error(`Could not find a manifest in ${source}. Extract the update ZIP into the project folder first.`);
+  const manifests = [];
+  for (const name of manifestFiles) manifests.push(JSON.parse(await readFile(path.join(source, name), "utf8")));
+  const manifest = {
+    media: manifests.flatMap((m) => m.media || []),
+    memoryVideos: manifests.flatMap((m) => m.memoryVideos || []),
+    insertAfter: Object.assign({}, ...manifests.map((m) => m.insertAfter || {})),
+  };
   let touched = 0;
   for (const target of targets) {
     const file = path.join(target, "birthday.json");
@@ -59,7 +67,10 @@ try {
         if (content.memoryVideos.some((v) => v.mediaId === clip.mediaId)) continue;
         if (content.memoryVideos.length >= MAX_VIDEOS)
           throw new Error(`${label}: the ${key} content already has ${MAX_VIDEOS} videos (the maximum).`);
-        content.memoryVideos.push({ ...clip });
+        // "insertAfter" places a clip right after an existing one (by media id).
+        const after = content.memoryVideos.findIndex((v) => v.mediaId === manifest.insertAfter[clip.mediaId]);
+        if (after >= 0) content.memoryVideos.splice(after + 1, 0, { ...clip });
+        else content.memoryVideos.push({ ...clip });
         if (key === "draft") addedClips++;
       }
     }
@@ -77,7 +88,7 @@ try {
     console.log(`- ${label}: added ${addedClips} video(s) (${total} videos in total)`);
   }
   console.log(touched ? "\nDone. Start the app with npm start and open the Memory chapter to check the new clips." : "\nNothing to change: the clips are already there.");
-  console.log("To publish online: git add . && git commit -m \"Add 5 memory videos\" && git push origin main");
+  console.log("To publish online: git add . && git commit -m \"Add memory videos\" && git push origin main");
 } catch (error) {
   console.error(error.message);
   process.exitCode = 1;
