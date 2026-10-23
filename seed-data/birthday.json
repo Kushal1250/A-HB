@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "revision": 38,
+  "revision": 39,
   "draft": {
     "blessings": {
       "enabled": true,
@@ -780,6 +780,41 @@
         "mediaId": "caa6ebbd75a570e8fea9d29c",
         "title": "A little moment to replay · 55",
         "caption": "One more little reason to smile, Anu.",
+        "visible": true
+      },
+      {
+        "id": "1d46d036-2fdb-4e03-ab63-8b1366fb561c",
+        "mediaId": "22f0bf54e7ad293fa52747f6",
+        "title": "A little moment to replay · 56",
+        "caption": "A moment worth keeping, just for you.",
+        "visible": true
+      },
+      {
+        "id": "2c708050-cb5d-47ec-bf24-ce60cdf018dd",
+        "mediaId": "f35cd3727dc66613680872f1",
+        "title": "A little moment to replay · 57",
+        "caption": "Happy memories are the best kind of gift.",
+        "visible": true
+      },
+      {
+        "id": "bd3d2984-8291-4738-889d-57e3e548993f",
+        "mediaId": "54e3b750c2fbe02c12f529c2",
+        "title": "A little moment to replay · 58",
+        "caption": "Here's to more days that feel just like this one.",
+        "visible": true
+      },
+      {
+        "id": "9af2c7ac-c3da-4b8c-a71b-4d5cd997d397",
+        "mediaId": "3ebd416a631d2f98fe72d5bb",
+        "title": "A little moment to replay · 59",
+        "caption": "A smile to remember on your special day.",
+        "visible": true
+      },
+      {
+        "id": "678805e5-f86c-4403-9b00-746c35e1e495",
+        "mediaId": "ad8e4c7a60d5d6db519cb6a9",
+        "title": "A little moment to replay · 60",
+        "caption": "Saved with love for your new year, Anu.",
         "visible": true
       }
     ],
@@ -1564,6 +1599,41 @@
         "mediaId": "caa6ebbd75a570e8fea9d29c",
         "title": "A little moment to replay · 55",
         "caption": "One more little reason to smile, Anu.",
+        "visible": true
+      },
+      {
+        "id": "1d46d036-2fdb-4e03-ab63-8b1366fb561c",
+        "mediaId": "22f0bf54e7ad293fa52747f6",
+        "title": "A little moment to replay · 56",
+        "caption": "A moment worth keeping, just for you.",
+        "visible": true
+      },
+      {
+        "id": "2c708050-cb5d-47ec-bf24-ce60cdf018dd",
+        "mediaId": "f35cd3727dc66613680872f1",
+        "title": "A little moment to replay · 57",
+        "caption": "Happy memories are the best kind of gift.",
+        "visible": true
+      },
+      {
+        "id": "bd3d2984-8291-4738-889d-57e3e548993f",
+        "mediaId": "54e3b750c2fbe02c12f529c2",
+        "title": "A little moment to replay · 58",
+        "caption": "Here's to more days that feel just like this one.",
+        "visible": true
+      },
+      {
+        "id": "9af2c7ac-c3da-4b8c-a71b-4d5cd997d397",
+        "mediaId": "3ebd416a631d2f98fe72d5bb",
+        "title": "A little moment to replay · 59",
+        "caption": "A smile to remember on your special day.",
+        "visible": true
+      },
+      {
+        "id": "678805e5-f86c-4403-9b00-746c35e1e495",
+        "mediaId": "ad8e4c7a60d5d6db519cb6a9",
+        "title": "A little moment to replay · 60",
+        "caption": "Saved with love for your new year, Anu.",
         "visible": true
       }
     ],
@@ -2661,6 +2731,66 @@
       "height": 368,
       "duration": 24.766667,
       "createdAt": "2026-10-21T10:10:22.660464+00:00"
+    },
+    {
+      "id": "22f0bf54e7ad293fa52747f6",
+      "kind": "video",
+      "filename": "22f0bf54e7ad293fa52747f6.mp4",
+      "thumbnailName": "22f0bf54e7ad293fa52747f6-thumb.webp",
+      "mime": "video/mp4",
+      "originalName": "WhatsApp Video 2026-10-23 at 8 51 16 AM.mp4",
+      "width": 720,
+      "height": 1280,
+      "duration": 60.113991,
+      "createdAt": "2026-10-23T03:29:58.860630+00:00"
+    },
+    {
+      "id": "f35cd3727dc66613680872f1",
+      "kind": "video",
+      "filename": "f35cd3727dc66613680872f1.mp4",
+      "thumbnailName": "f35cd3727dc66613680872f1-thumb.webp",
+      "mime": "video/mp4",
+      "originalName": "WhatsApp Video 2026-10-23 at 8 51 17 AM.mp4",
+      "width": 720,
+      "height": 1280,
+      "duration": 25.283991,
+      "createdAt": "2026-10-23T03:29:58.860630+00:00"
+    },
+    {
+      "id": "54e3b750c2fbe02c12f529c2",
+      "kind": "video",
+      "filename": "54e3b750c2fbe02c12f529c2.mp4",
+      "thumbnailName": "54e3b750c2fbe02c12f529c2-thumb.webp",
+      "mime": "video/mp4",
+      "originalName": "WhatsApp Video 2026-10-23 at 8 51 17 AM (2).mp4",
+      "width": 720,
+      "height": 1280,
+      "duration": 33.852993,
+      "createdAt": "2026-10-23T03:29:58.860630+00:00"
+    },
+    {
+      "id": "3ebd416a631d2f98fe72d5bb",
+      "kind": "video",
+      "filename": "3ebd416a631d2f98fe72d5bb.mp4",
+      "thumbnailName": "3ebd416a631d2f98fe72d5bb-thumb.webp",
+      "mime": "video/mp4",
+      "originalName": "WhatsApp Video 2026-10-23 at 8 51 18 AM.mp4",
+      "width": 960,
+      "height": 720,
+      "duration": 29.371995,
+      "createdAt": "2026-10-23T03:29:58.860630+00:00"
+    },
+    {
+      "id": "ad8e4c7a60d5d6db519cb6a9",
+      "kind": "video",
+      "filename": "ad8e4c7a60d5d6db519cb6a9.mp4",
+      "thumbnailName": "ad8e4c7a60d5d6db519cb6a9-thumb.webp",
+      "mime": "video/mp4",
+      "originalName": "WhatsApp Video 2026-10-23 at 8 51 19 AM.mp4",
+      "width": 720,
+      "height": 1280,
+      "duration": 48.97,
+      "createdAt": "2026-10-23T03:29:58.860630+00:00"
     }
   ],
   "mediaKey": "77e3fcf3b5862d9adb336aad2c236b0c8aa1f4c836ec7c67df3c5b557684ad28",
